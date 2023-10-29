@@ -1,0 +1,387 @@
+[
+    {
+        "category": "filters",
+        "categoryDescription": "Filters are used to modify output.",
+        "subcategory": [
+            {
+                "subcategoryName": "math",
+                "subcategoryDescription": "Perform mathematical operation on numbers.",
+                "elements": [
+                    {
+                        "elementName": "plus",
+                        "elementDescription": "add number to input.",
+                        "liquidjsUrl": "filters/plus.html"
+                    },
+                    {
+                        "elementName": "minus",
+                        "elementDescription": "substract number from input.",
+                        "liquidjsUrl": "filters/minus.html"
+                    },
+                    {
+                        "elementName": "modulo",
+                        "elementDescription": "divide input by number and return remainder.",
+                        "liquidjsUrl": "filters/modulo.html"
+                    },
+                    {
+                        "elementName": "times",
+                        "elementDescription": "multiply input by number.",
+                        "liquidjsUrl": "filters/times.html"
+                    },
+                    {
+                        "elementName": "divided_by",
+                        "elementDescription": "divide input by number.",
+                        "liquidjsUrl": "filters/divided_by.html"
+                    },
+                    {
+                        "elementName": "abs",
+                        "elementDescription": "return absolute value of input",
+                        "liquidjsUrl": "filters/abs.html"
+                    },
+                    {
+                        "elementName": "at_least",
+                        "elementDescription": "return input if greater than number, otherwise return number",
+                        "liquidjsUrl": "filters/at_least.html"
+                    },
+                    {
+                        "elementName": "at_most",
+                        "elementDescription": "return input if less than number, otherwise return number",
+                        "liquidjsUrl": "filters/at_most.html"
+                    },
+                    {
+                        "elementName": "ceil",
+                        "elementDescription": "round input up to nearest integer",
+                        "liquidjsUrl": "filters/ceil.html"
+                    },
+                    {
+                        "elementName": "round",
+                        "elementDescription": "round input to nearest integer",
+                        "liquidjsUrl": "filters/round.html"
+                    },
+                    {
+                        "elementName": "floor",
+                        "elementDescription": "round input down to nearest integer",
+                        "liquidjsUrl": "filters/floor.html"
+                    }
+                ]
+            },
+            {
+                "subcategoryName": "string",
+                "subcategoryDescription": "Perform string operations.",
+                "elements": [
+                    {
+                        "elementName": "append",
+                        "elementDescription": "append string to input.",
+                        "liquidjsUrl": "filters/append.html"
+                    },
+                    {
+                        "elementName": "prepend",
+                        "elementDescription": "prepend string to input.",
+                        "liquidjsUrl": "filters/prepend.html"
+                    },
+                    {
+                        "elementName": "capitalized",
+                        "elementDescription": "capitalize first letter of input.",
+                        "liquidjsUrl": "filters/capitalized.html"
+                    },
+                    {
+                        "elementName": "upcase",
+                        "elementDescription": "convert input to uppercase.",
+                        "liquidjsUrl": "filters/upcase.html"
+                    },
+                    {
+                        "elementName": "downcase",
+                        "elementDescription": "convert input to lowercase.",
+                        "liquidjsUrl": "filters/downcase.html"
+                    },
+                    {
+                        "elementName": "strip",
+                        "elementDescription": "remove whitespace from input.",
+                        "liquidjsUrl": "filters/strip.html"
+                    }
+                ]
+            },
+            {
+                "subcategoryName": "array",
+                "subcategoryDescription": "Perform array operations.",
+                "elements": [
+                    {
+                        "elementName": "join",
+                        "elementDescription": "join array elements into string.",
+                        "liquidjsUrl": "filters/join.html"
+                    },
+                    {
+                        "elementName": "first",
+                        "elementDescription": "return first element of array.",
+                        "liquidjsUrl": "filters/first.html"
+                    },
+                    {
+                        "elementName": "last",
+                        "elementDescription": "return last element of array.",
+                        "liquidjsUrl": "filters/last.html"
+                    },
+                    {
+                        "elementName": "sort",
+                        "elementDescription": "sort array.",
+                        "liquidjsUrl": "filters/sort.html"
+                    },
+                    {
+                        "elementName": "map",
+                        "elementDescription": "apply filter to each element of array.",
+                        "liquidjsUrl": "filters/map.html"
+                    },
+                    {
+                        "elementName": "reverse",
+                        "elementDescription": "reverse array.",
+                        "liquidjsUrl": "filters/reverse.html"
+                    },
+                    {
+                        "elementName": "size",
+                        "elementDescription": "return size of array.",
+                        "liquidjsUrl": "filters/size.html"
+                    },
+                    {
+                        "elementName": "uniq",
+                        "elementDescription": "remove duplicate elements from array.",
+                        "liquidjsUrl": "filters/uniq.html"
+                    }
+                ]
+            },
+            {
+                "subcategoryName": "date",
+                "subcategoryDescription": "Perform date operations",
+                "elements": [
+                    {
+                        "elementName": "date",
+                        "elementDescription": "format date.",
+                        "liquidjsUrl": "filters/date.html"
+                    }
+                ]
+            },
+            {
+                "subcategoryName": "misc",
+                "subcategoryDescription": "Miscellaneous filters.",
+                "elements": [
+                    {
+                        "elementName": "default",
+                        "elementDescription": "return input if not empty, otherwise return default value.",
+                        "liquidjsUrl": "filters/default.html"
+                    },
+                    {
+                        "elementName": "json",
+                        "elementDescription": "convert input to JSON.",
+                        "liquidjsUrl": "filters/json.html"
+                    },
+                    {
+                        "elementName": "raw",
+                        "elementDescription": "return input without escaping.",
+                        "liquidjsUrl": "filters/raw.html"
+                    }
+                ]
+            },
+            {
+                "subcategoryName": "url",
+                "subcategoryDescription": "URL filters.",
+                "elements":[
+                    {
+                        "elementName": "url_encode",
+                        "elementDescription": "encode URL.",
+                        "liquidjsUrl": "filters/url_encode.html"
+                    },
+                    {
+                        "elementName": "url_decode",
+                        "elementDescription": "decode URL.",
+                        "liquidjsUrl": "filters/url_decode.html"
+                    },
+                    {
+                        "elementName": "escape",
+                        "elementDescription": "escape URL.",
+                        "liquidjsUrl": "filters/escape.html"
+                    },
+                    {
+                        "elementName": "escape_once",
+                        "elementDescription": "escape URL once.",
+                        "liquidjsUrl": "filters/escape_once.html"
+                    },
+                    {
+                        "elementName": "strip_html",
+                        "elementDescription": "strip HTML tags from input.",
+                        "liquidjsUrl": "filters/strip_html.html"
+                    },
+                    {
+                        "elementName": "newlines_to_br",
+                        "elementDescription": "convert newlines to HTML line breaks.",
+                        "liquidjsUrl": "filters/newlines_to_br.html"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "category": "tags",
+        "categoryDescription": "Create the logic and control flow for templates.",
+        "subcategory":[
+            {
+                "subcategoryName": "Iteration",
+                "subcategoryDescription": "Iterate over a collection.",
+                "elements": [
+                    {
+                        "elementName": "for",
+                        "elementDescription": "iteration tags run blocks of code repeatedly.",
+                        "liquidjsUrl": "tags/for.html"
+                    },
+                    {
+                        "elementName": "cycle",
+                        "elementDescription": "loops through a group of strings and prints them in the order that they were passed as arguments.",
+                        "liquidjsUrl": "tags/cycle.html"
+                    },
+                    {
+                        "elementName": "tablerow",
+                        "elementDescription": "generates an HTML table.",
+                        "liquidjsUrl": "tags/tablerow.html"
+                    }
+                ]
+            },
+            {
+                "subcategoryName": "Control Flow",
+                "subcategoryDescription": "Control the execution branch of template rendering.",
+                "elements": [
+                    {
+                        "elementName": "if",
+                        "elementDescription": "executes a block of code only if a certain condition is true.",
+                        "liquidjsUrl": "tags/if.html"
+                    },
+                    {
+                        "elementName": "unless",
+                        "elementDescription": "executes a block of code only if a certain condition is not met.",
+                        "liquidjsUrl": "tags/unless.html"
+                    },
+                    {
+                        "elementName": "elsif",
+                        "elementDescription": "adds more conditions within an if or unless block.",
+                        "liquidjsUrl": "tags/elsif.html"
+                    },
+                    {
+                        "elementName": "else",
+                        "elementDescription": "adds more conditions within an if or unless block.",
+                        "liquidjsUrl": "tags/else.html"
+                    },
+                    {
+                        "elementName": "case",
+                        "elementDescription": "creates a switch statement to compare a variable with different values.",
+                        "liquidjsUrl": "tags/case.html"
+                    },
+                    {
+                        "elementName": "when",
+                        "elementDescription": "creates a switch statement to compare a variable with different values.",
+                        "liquidjsUrl": "tags/when.html"
+                    }
+                ]
+            },
+            {
+                "subcategoryName": "Variable",
+                "subcategoryDescription": "Define and alter variables.",
+                "elements": [
+                    {
+                        "elementName": "assign",
+                        "elementDescription": "creates a new variable.",
+                        "liquidjsUrl": "tags/assign.html"
+                    },
+                    {
+                        "elementName": "increment",
+                        "elementDescription": "creates a new number variable, and increases its value by one every time it is called.",
+                        "liquidjsUrl": "tags/increment.html"
+                    },
+                    {
+                        "elementName": "decrement",
+                        "elementDescription": "creates a new number variable, and decreases its value by one every time it is called.",
+                        "liquidjsUrl": "tags/decrement.html"
+                    },
+                    {
+                        "elementName": "capture",
+                        "elementDescription": "captures the string inside of the opening and closing tags and assigns it to a variable.",
+                        "liquidjsUrl": "tags/capture.html"
+                    },
+                    {
+                        "elementName": "echo",
+                        "elementDescription": "outputs an expression in the rendered HTML.",
+                        "liquidjsUrl": "tags/echo.html"
+                    }
+                ]
+            },
+            {
+                "subcategoryName": "File",
+                "subcategoryDescription": "Include another template or extend a layout template.",
+                "elements": [
+                    {
+                        "elementName": "render",
+                        "elementDescription": "render a partial template from partials directory."
+                    },
+                    {
+                        "elementName": "include",
+                        "elementDescription": "*deprecated*, use render instead."
+                    },
+                    {
+                        "elementName": "layout",
+                        "elementDescription": "introduce a layout template for the current template to render in."
+                    }
+                ]
+            },
+            {
+                "subcategoryName": "Language",
+                "subcategoryDescription": "Temporarily disable LiquidJS syntax.",
+                "elements": [
+                    {
+                        "elementName": "# (inline comment)",
+                        "elementDescription": "add comments to a Liquid template using an inline tag."
+                    },
+                    {
+                        "elementName": "raw",
+                        "elementDescription": "raw temporarily disables tag processing."
+                    },
+                    {
+                        "elementName": "comment",
+                        "elementDescription": "allows you to leave un-rendered code inside a Liquid template."
+                    },
+                    {
+                        "elementName": "liquid",
+                        "elementDescription": "encloses multiple tags within one set of delimiters, to allow writing Liquid logic more concisely."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "category": "objects",
+        "categoryDescription": "Contain the content that Liquid displays on a page.",
+        "subcategory":[
+            {
+                "subcategoryName": "string",
+                "subcategoryDescription": "sequences of characters wrapped in single or double quotes.",
+                "example": "Hello World"
+            },
+            {
+                "subcategoryName": "number",
+                "subcategoryDescription": "include floats and integers.",
+                "example": "100"
+            },
+            {
+                "subcategoryName": "boolean",
+                "subcategoryDescription": "booleans are either true or false.",
+                "example": "true"
+            },
+            {
+                "subcategoryName": "nil",
+                "subcategoryDescription": "special empty value that is returned when Liquid code has no results."
+            },
+            {
+                "subcategoryName": "array",
+                "subcategoryDescription": "hold lists of variables of any type.",
+                "example": "['Tobi', 'Bob', 'Laura']"
+            },
+            {
+                "subcategoryName": "emptyDrop",
+                "subcategoryDescription": "returned if you try to access a deleted object."
+            }
+        ]
+    }
+]

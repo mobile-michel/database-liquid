@@ -1,0 +1,12 @@
+[
+    {"title": "Vacuum",
+    "type": "electronics",
+    "available": true},
+    {"title": "Spatula",
+    "type": "kitchen"},
+    {"title": "Television",
+    "type": "electronics"},
+    {"title": "Garlic press",
+    "type": "kitchen",
+    "available": true}
+]

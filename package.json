@@ -1,0 +1,17 @@
+{
+  "name": "database-liquid",
+  "description": "List of tags and filters for Liquid templates",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx @11ty/eleventy --serve",
+    "build": "eleventy",
+    "debug": "DEBUG=Eleventy* eleventy"
+  },
+  "keywords": ["eleventy", "liquid", "pico.css"],
+  "author": "Michel Maillard",
+  "license": "ISC",
+  "dependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  }
+}

@@ -1,0 +1,21 @@
+---
+title: Liquid Elements
+description: List of LiquidJS elements.
+layout: base
+tags: primary
+---
+{% for items in liquid %}
+  <h2>{{ items.category | capitalize }}</h2>
+  <p>{{ items.categoryDescription }}</p>
+    {% for cat in items.subcategory %}
+      <h3>{{ cat.subcategoryName | capitalize }}</h3>
+      <p>{{ cat.subcategoryDescription }}{% if cat.example %}
+    <br>Example: <code>{{ cat.example }}</code>{% endif %}</p>
+      <ul>
+        {% for subcat in cat.elements %}
+          <li><strong>{{ subcat.elementName }}</strong>: {{ subcat.elementDescription }}
+          <a href="https://liquidjs.com/{{ subcat.liquidjsUrl }}">LiquidJS doc</a></li>
+        {% endfor %}
+      </ul>
+    {% endfor %}
+{% endfor %}
