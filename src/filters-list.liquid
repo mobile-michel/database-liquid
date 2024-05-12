@@ -13,8 +13,8 @@ tags: primary
     <br>Example: <code>{{ cat.example }}</code>{% endif %}</p>
       <ul>
         {% for subcat in cat.elements %}
-          <li><strong>{{ subcat.elementName }}</strong>: {{ subcat.elementDescription }}
-          <a href="https://liquidjs.com/{{ subcat.liquidjsUrl }}">LiquidJS doc</a></li>
+          <li><strong><a href="../filters/{{ cat.subcategoryName }}/{{ subcat.elementName }}">{{ subcat.elementName }}</a></strong>: {{ subcat.elementDescription }}
+          <a href="https://liquidjs.com/filters/{{ subcat.elementName }}.html">LiquidJS doc</a> (v{{ subcat.version }})</li>
         {% endfor %}
       </ul>
     {% endfor %}

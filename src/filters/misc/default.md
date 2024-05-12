@@ -1,5 +1,5 @@
 ---
-title: Default misc filter
+title: default
 description: Allows you to specify a fallback in case a value doesn’t exist. default will show its value if the left side is falsy or empty (string or Array).
 liquidjs: https://liquidjs.com/filters/default.html
 shopify: https://shopify.github.io/liquid/filters/default/

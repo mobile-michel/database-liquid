@@ -9,58 +9,58 @@
                 "elements": [
                     {
                         "elementName": "plus",
-                        "elementDescription": "add number to input.",
-                        "liquidjsUrl": "filters/plus.html"
+                        "elementDescription": "Adds a number to another number.",
+                        "version": "1.9.1"
                     },
                     {
                         "elementName": "minus",
-                        "elementDescription": "substract number from input.",
-                        "liquidjsUrl": "filters/minus.html"
+                        "elementDescription": "Subtracts a number from another number.",
+                        "version": "1.9.1"
                     },
                     {
                         "elementName": "modulo",
-                        "elementDescription": "divide input by number and return remainder.",
-                        "liquidjsUrl": "filters/modulo.html"
+                        "elementDescription": "Returns the remainder of a division operation.",
+                        "version": "1.9.1"
                     },
                     {
                         "elementName": "times",
-                        "elementDescription": "multiply input by number.",
-                        "liquidjsUrl": "filters/times.html"
-                    },
-                    {
-                        "elementName": "divided_by",
-                        "elementDescription": "divide input by number.",
-                        "liquidjsUrl": "filters/divided_by.html"
-                    },
-                    {
-                        "elementName": "abs",
-                        "elementDescription": "return absolute value of input",
-                        "liquidjsUrl": "filters/abs.html"
-                    },
-                    {
-                        "elementName": "at_least",
-                        "elementDescription": "return input if greater than number, otherwise return number",
-                        "liquidjsUrl": "filters/at_least.html"
-                    },
-                    {
-                        "elementName": "at_most",
-                        "elementDescription": "return input if less than number, otherwise return number",
-                        "liquidjsUrl": "filters/at_most.html"
-                    },
-                    {
-                        "elementName": "ceil",
-                        "elementDescription": "round input up to nearest integer",
-                        "liquidjsUrl": "filters/ceil.html"
-                    },
-                    {
-                        "elementName": "round",
-                        "elementDescription": "round input to nearest integer",
-                        "liquidjsUrl": "filters/round.html"
+                        "elementDescription": "Multiplies a number by another number.",
+                        "version": "1.9.1"
                     },
                     {
                         "elementName": "floor",
-                        "elementDescription": "round input down to nearest integer",
-                        "liquidjsUrl": "filters/floor.html"
+                        "elementDescription": "Rounds the input down to the nearest whole number",
+                        "version": "1.9.1"
+                    },
+                    {
+                        "elementName": "ceil",
+                        "elementDescription": "Rounds the input up to the nearest whole number",
+                        "version": "1.9.1"
+                    },
+                    {
+                        "elementName": "round",
+                        "elementDescription": "Rounds a number to the nearest integer or, if a number is passed as an argument, to that number of decimal places",
+                        "version": "1.9.1"
+                    },
+                    {
+                        "elementName": "divided_by",
+                        "elementDescription": "Divides a number by another number.",
+                        "version": "1.9.1"
+                    },
+                    {
+                        "elementName": "abs",
+                        "elementDescription": "Returns the absolute value of a number",
+                        "version": "1.9.1"
+                    },
+                    {
+                        "elementName": "at_least",
+                        "elementDescription": "Limits a number to a minimum value",
+                        "version": "8.4.0"
+                    },
+                    {
+                        "elementName": "at_most",
+                        "elementDescription": "Limits a number to a maximum value",
+                        "version": "8.4.0"
                     }
                 ]
             },
@@ -71,32 +71,128 @@
                     {
                         "elementName": "append",
                         "elementDescription": "append string to input.",
-                        "liquidjsUrl": "filters/append.html"
+                        "liquidjsUrl": "filters/append.html",
+                        "version": "1.9.1"
                     },
                     {
                         "elementName": "prepend",
                         "elementDescription": "prepend string to input.",
-                        "liquidjsUrl": "filters/prepend.html"
+                        "liquidjsUrl": "filters/prepend.html",
+                        "version": "1.9.1"
                     },
                     {
                         "elementName": "capitalized",
                         "elementDescription": "capitalize first letter of input.",
-                        "liquidjsUrl": "filters/capitalized.html"
+                        "liquidjsUrl": "filters/capitalized.html",
+                        "version": "1.9.1"
                     },
                     {
                         "elementName": "upcase",
                         "elementDescription": "convert input to uppercase.",
-                        "liquidjsUrl": "filters/upcase.html"
+                        "liquidjsUrl": "filters/upcase.html",
+                        "version": "1.9.1"
                     },
                     {
                         "elementName": "downcase",
                         "elementDescription": "convert input to lowercase.",
-                        "liquidjsUrl": "filters/downcase.html"
+                        "liquidjsUrl": "filters/downcase.html",
+                        "version": "1.9.1"
                     },
                     {
                         "elementName": "strip",
                         "elementDescription": "remove whitespace from input.",
-                        "liquidjsUrl": "filters/strip.html"
+                        "liquidjsUrl": "filters/strip.html",
+                        "version": "1.9.1"
+                    },
+                    {
+                        "elementName": "lstrip",
+                        "elementDescription": "Removes all whitespace (tabs, spaces, and newlines) from the left side of a string.",
+                        "liquidjsUrl": "filters/lstrip.html",
+                        "version": "1.9.1"
+                    },
+                    {
+                        "elementName": "rstrip",
+                        "elementDescription": "Removes all whitespace (tabs, spaces, and newlines) from the right side of a string.",
+                        "liquidjsUrl": "filters/rstrip.html",
+                        "version": "1.9.1"
+                    },
+                    {
+                        "elementName": "strip_newlines",
+                        "elementDescription": "Removes any newline characters (line breaks) from a string.",
+                        "liquidjsUrl": "filters/strip_newlines.html",
+                        "version": "1.9.1"
+                    },
+                    {
+                        "elementName": "split",
+                        "elementDescription": "Divides a string into an array using the argument as a separator.",
+                        "liquidjsUrl": "filters/split.html",
+                        "version": "1.9.1"
+                    },
+                    {
+                        "elementName": "replace",
+                        "elementDescription": "Replaces every occurrence of the first argument in a string with the second argument.",
+                        "liquidjsUrl": "filters/replace.html",
+                        "version": "1.9.1"
+                    },
+                    {
+                        "elementName": "replace_first",
+                        "elementDescription": "Replaces only the first occurrence of the first argument in a string with the second argument.",
+                        "liquidjsUrl": "filters/replace_first.html",
+                        "version": "1.9.1"
+                    },
+                    {
+                        "elementName": "last",
+                        "elementDescription": "Replaces only the last occurrence of the first argument in a string with the second argument.",
+                        "liquidjsUrl": "filters/replace_last.html",
+                        "version": "10.2.0"
+                    },
+                    {
+                        "elementName": "remove",
+                        "elementDescription": "Removes every occurrence of the specified substring from a string.",
+                        "liquidjsUrl": "filters/remove.html",
+                        "version": "1.9.1"
+                    },
+                    {
+                        "elementName": "remove_first",
+                        "elementDescription": "Removes only the first occurrence of the specified substring from a string.",
+                        "liquidjsUrl": "filters/remove_first.html",
+                        "version": "1.9.1"
+                    },
+                    {
+                        "elementName": "remove_last",
+                        "elementDescription": "Removes only the last occurrence of the specified substring from a string.",
+                        "liquidjsUrl": "filters/remove_last.html",
+                        "version": "10.2.0"
+                    },
+                    {
+                        "elementName": "truncate",
+                        "elementDescription": "Shortens a string down to the number of characters passed as an argument.",
+                        "liquidjsUrl": "filters/truncate.html",
+                        "version": "1.9.1"
+                    },
+                    {
+                        "elementName": "truncatewords",
+                        "elementDescription": "Shortens a string down to the number of words passed as an argument.",
+                        "liquidjsUrl": "filters/truncatewords.html",
+                        "version": "1.9.1"
+                    },
+                    {
+                        "elementName": "normalize_whitespace",
+                        "elementDescription": "Replace any occurrence of whitespace with a single space.",
+                        "liquidjsUrl": "filters/normalize_whitespace.html",
+                        "version": "10.13.0"
+                    },
+                    {
+                        "elementName": "number_of_words",
+                        "elementDescription": "Count the number of words in some text.",
+                        "liquidjsUrl": "filters/number_of_words.html",
+                        "version": "10.13.0"
+                    },
+                    {
+                        "elementName": "array_to_sentence_string",
+                        "elementDescription": "Convert an array into a sentence, useful for listing tags.",
+                        "liquidjsUrl": "filters/array_to_sentence_string.html",
+                        "version": "10.13.0"
                     }
                 ]
             },
@@ -105,55 +201,167 @@
                 "subcategoryDescription": "Perform array operations.",
                 "elements": [
                     {
-                        "elementName": "join",
-                        "elementDescription": "join array elements into string.",
-                        "liquidjsUrl": "filters/join.html"
-                    },
-                    {
-                        "elementName": "first",
-                        "elementDescription": "return first element of array.",
-                        "liquidjsUrl": "filters/first.html"
-                    },
-                    {
-                        "elementName": "last",
-                        "elementDescription": "return last element of array.",
-                        "liquidjsUrl": "filters/last.html"
-                    },
-                    {
-                        "elementName": "sort",
-                        "elementDescription": "sort array.",
-                        "liquidjsUrl": "filters/sort.html"
+                        "elementName": "slice",
+                        "elementDescription": "Returns a substring of 1 character beginning at the index specified by the first argument.",
+                        "liquidjsUrl": "filters/slice.html",
+                        "version": "1.9.1"
                     },
                     {
                         "elementName": "map",
-                        "elementDescription": "apply filter to each element of array.",
-                        "liquidjsUrl": "filters/map.html"
+                        "elementDescription": "Creates an array of values by extracting the values of a named property from another object.",
+                        "liquidjsUrl": "filters/map.html",
+                        "version": "1.9.1"
                     },
                     {
-                        "elementName": "reverse",
-                        "elementDescription": "reverse array.",
-                        "liquidjsUrl": "filters/reverse.html"
+                        "elementName": "sort",
+                        "elementDescription": "Sorts items in an array in case-sensitive order.",
+                        "liquidjsUrl": "filters/sort.html",
+                        "version": "1.9.1"
                     },
                     {
-                        "elementName": "size",
-                        "elementDescription": "return size of array.",
-                        "liquidjsUrl": "filters/size.html"
+                        "elementName": "sort_natural",
+                        "elementDescription": "Sorts items in an array in case-insensitive order.",
+                        "liquidjsUrl": "filters/sort_natural.html",
+                        "version": "8.4.0"
                     },
                     {
                         "elementName": "uniq",
                         "elementDescription": "remove duplicate elements from array.",
-                        "liquidjsUrl": "filters/uniq.html"
+                        "liquidjsUrl": "filters/uniq.html",
+                        "version": "1.9.1"
+                    },
+                    {
+                        "elementName": "where",
+                        "elementDescription": "Creates an array including only the objects with a given property value, or any truthy value by default.",
+                        "liquidjsUrl": "filters/where.html",
+                        "version": "8.1.0"
+                    },
+                    {
+                        "elementName": "where_exp",
+                        "elementDescription": "Select all the objects in an array where the expression is true.",
+                        "liquidjsUrl": "filters/where_exp.html",
+                        "version": "10.12.0"
+                    },
+                    {
+                        "elementName": "group_by",
+                        "elementDescription": "Group an array’s items by a given property.",
+                        "liquidjsUrl": "filters/group_by.html",
+                        "version": "10.11.0"
+                    },
+                    {
+                        "elementName": "group_by_exp",
+                        "elementDescription": "Group an array’s items using a Liquid expression.",
+                        "liquidjsUrl": "filters/group_by_exp.html",
+                        "version": "10.11.0"
+                    },
+                    {
+                        "elementName": "find",
+                        "elementDescription": "Return the first object in an array for which the queried attribute has the given value or return nil if no item in the array satisfies the given criteria.",
+                        "liquidjsUrl": "filters/find.html",
+                        "version": "10.11.0"
+                    },
+                    {
+                        "elementName": "find_exp",
+                        "elementDescription": "Return the first object in an array for which the given expression evaluates to true or return nil if no item in the array satisfies the evaluated expression.",
+                        "liquidjsUrl": "filters/find_exp.html",
+                        "version": "10.11.0"
+                    },
+                    {
+                        "elementName": "first",
+                        "elementDescription": "Returns the first item of an array.",
+                        "liquidjsUrl": "filters/first.html",
+                        "version": "1.9.1"
+                    },
+                    {
+                        "elementName": "last",
+                        "elementDescription": "Returns the last item of an array.",
+                        "liquidjsUrl": "filters/last.html",
+                        "version": "1.9.1"
+                    },
+                    {
+                        "elementName": "join",
+                        "elementDescription": "Combines the items in an array into a single string using the argument as a separator.",
+                        "liquidjsUrl": "filters/join.html",
+                        "version": "1.9.1"
+                    },
+                    {
+                        "elementName": "reverse",
+                        "elementDescription": "Reverses the order of the items in an array.",
+                        "liquidjsUrl": "filters/reverse.html",
+                        "version": "1.9.1"
+                    },
+                    {
+                        "elementName": "concat",
+                        "elementDescription": "Concatenates (joins together) multiple arrays, the resulting array contains all the items from the input arrays.",
+                        "liquidjsUrl": "filters/concat.html",
+                        "version": "2.0.0"
+                    },
+                    {
+                        "elementName": "compact",
+                        "elementDescription": "Removes any nil values from an array.",
+                        "liquidjsUrl": "filters/compact.html",
+                        "version": "9.22.0"
+                    },
+                    {
+                        "elementName": "size",
+                        "elementDescription": "Returns the number of characters in a string or the number of items in an array.",
+                        "liquidjsUrl": "filters/size.html",
+                        "version": "1.9.1"
+                    },
+                    {
+                        "elementName": "push",
+                        "elementDescription": "Push an element into array. It’s NON-DESTRUCTIVE, i.e. it does not mutate the array, but rather make a copy and mutate that.",
+                        "liquidjsUrl": "filters/push.html",
+                        "version": "10.8.0"
+                    },
+                    {
+                        "elementName": "pop",
+                        "elementDescription": "Pop an element from the array. It’s NON-DESTRUCTIVE, i.e. it does not mutate the array, but rather make a copy and mutate that.",
+                        "liquidjsUrl": "filters/pop.html",
+                        "version": "10.11.0"
+                    },
+                    {
+                        "elementName": "shift",
+                        "elementDescription": "Shift an element from the array. It’s NON-DESTRUCTIVE, i.e. it does not mutate the array, but rather make a copy and mutate that.",
+                        "liquidjsUrl": "filters/shift.html",
+                        "version": "10.11.0"
+                    },
+                    {
+                        "elementName": "unshift",
+                        "elementDescription": "Unshift an element to the front of the array. It’s NON-DESTRUCTIVE, i.e. it does not mutate the array, but rather make a copy and mutate that.",
+                        "liquidjsUrl": "filters/unshift.html",
+                        "version": "10.11.0"
                     }
                 ]
             },
             {
-                "subcategoryName": "date",
+                "subcategoryName": "date-filter",
                 "subcategoryDescription": "Perform date operations",
                 "elements": [
                     {
                         "elementName": "date",
-                        "elementDescription": "format date.",
-                        "liquidjsUrl": "filters/date.html"
+                        "elementDescription": "Used to convert a timestamp into the specified format.",
+                        "version": "1.9.1"
+                    },
+                    {
+                        "elementName": "date_to_xmlschema",
+                        "elementDescription": "Convert a Date into XML Schema (ISO 8601) format.",
+                        "version": "10.13.0"
+                    },
+                    {
+                        "elementName": "date_to_rfc822",
+                        "elementDescription": "Convert a Date into the RFC-822 format used for RSS feeds.",
+                        "version": "10.13.0"
+                    },
+                    {
+                        "elementName": "date_to_string",
+                        "elementDescription": "Convert a date to short format.",
+                        "version": "10.13.0"
+                    },
+                    {
+                        "elementName": "date_to_long_string",
+                        "elementDescription": "Convert a date to long format.",
+                        "version": "10.13.0"
                     }
                 ]
             },
@@ -163,54 +371,84 @@
                 "elements": [
                     {
                         "elementName": "default",
-                        "elementDescription": "return input if not empty, otherwise return default value.",
-                        "liquidjsUrl": "filters/default.html"
+                        "elementDescription": "Allows you to specify a fallback in case a value doesn’t exist.",
+                        "version": "1.9.1"
                     },
                     {
                         "elementName": "json",
-                        "elementDescription": "convert input to JSON.",
-                        "liquidjsUrl": "filters/json.html"
+                        "elementDescription": "Convert values to string via JSON.stringify(), for debug purpose.",
+                        "version": "9.10.0"
+                    },
+                    {
+                        "elementName": "jsonify",
+                        "elementDescription": "Convert values to string via JSON.stringify(), for debug purpose, like json filter.",
+                        "version": "10.13.0"
+                    },
+                    {
+                        "elementName": "inspect",
+                        "elementDescription": "Similar with json, but inspect allows cyclic structure.",
+                        "version": "10.13.0"
                     },
                     {
                         "elementName": "raw",
-                        "elementDescription": "return input without escaping.",
-                        "liquidjsUrl": "filters/raw.html"
+                        "elementDescription": "Directly returns the value of the variable.",
+                        "version": "9.37.0"
+                    },
+                    {
+                        "elementName": "to_integer",
+                        "elementDescription": "Convert values to number.",
+                        "version": "10.13.0"
                     }
                 ]
             },
             {
-                "subcategoryName": "url",
+                "subcategoryName": "html",
                 "subcategoryDescription": "URL filters.",
                 "elements":[
                     {
-                        "elementName": "url_encode",
-                        "elementDescription": "encode URL.",
-                        "liquidjsUrl": "filters/url_encode.html"
-                    },
-                    {
-                        "elementName": "url_decode",
-                        "elementDescription": "decode URL.",
-                        "liquidjsUrl": "filters/url_decode.html"
-                    },
-                    {
                         "elementName": "escape",
-                        "elementDescription": "escape URL.",
-                        "liquidjsUrl": "filters/escape.html"
+                        "elementDescription": "Escapes a string by replacing HTML special characters with escape sequences.",
+                        "version": "1.9.1"
                     },
                     {
                         "elementName": "escape_once",
-                        "elementDescription": "escape URL once.",
-                        "liquidjsUrl": "filters/escape_once.html"
+                        "elementDescription": "Escapes a string without changing existing escaped entities.",
+                        "version": "1.9.1"
+                    },
+                    {
+                        "elementName": "url_encode",
+                        "elementDescription": "Converts any URL-unsafe characters in a string into percent-encoded characters.",
+                        "version": "1.9.1"
+                    },
+                    {
+                        "elementName": "url_decode",
+                        "elementDescription": "Decodes a string that has been encoded as a URL.",
+                        "version": "6.1.0"
                     },
                     {
                         "elementName": "strip_html",
-                        "elementDescription": "strip HTML tags from input.",
-                        "liquidjsUrl": "filters/strip_html.html"
+                        "elementDescription": "Removes any HTML tags from a string.",
+                        "version": "1.9.1"
                     },
                     {
-                        "elementName": "newlines_to_br",
-                        "elementDescription": "convert newlines to HTML line breaks.",
-                        "liquidjsUrl": "filters/newlines_to_br.html"
+                        "elementName": "newline_to_br",
+                        "elementDescription": "Replaces every newline in a string with an HTML line break.",
+                        "version": "1.9.1"
+                    },
+                    {
+                        "elementName": "xml_escape",
+                        "elementDescription": "Escape some text for use in XML.",
+                        "version": "10.13.0"
+                    },
+                    {
+                        "elementName": "cgi_escape",
+                        "elementDescription": "CGI escape a string for use in a URL.",
+                        "version": "10.13.0"
+                    },
+                    {
+                        "elementName": "uri_escape",
+                        "elementDescription": "Percent encodes any special characters in a URI.",
+                        "version": "10.13.0"
                     }
                 ]
             }
