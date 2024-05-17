@@ -1,0 +1,36 @@
+---
+title: last
+description: Returns the last item of an array.
+liquidjs: https://liquidjs.com/filters/last.html
+shopify: https://shopify.github.io/liquid/filters/last/
+shopifyDev: https://shopify.dev/docs/api/liquid/filters/last
+---
+<h3>Example 1</h3>
+<p>input:
+  {% raw %}
+<pre><code>
+    {{ "Ground control to Major Tom." | split: " " | last }}
+</code></pre>
+</p>
+{% endraw %}
+<p>output:
+<pre><code>
+    {{ "Ground control to Major Tom." | split: " " | last }}
+</code></pre>
+</p>
+
+<h3>Example 1</h3>
+<p>input:
+  {% raw %}
+<pre><code>
+  {% assign my_array = "zebra, octopus, giraffe, tiger" | split: ", " %}
+  {{ my_array.last }}
+</code></pre>
+</p>
+{% endraw %}
+<p>output:
+<pre><code>
+  {% assign my_array = "zebra, octopus, giraffe, tiger" | split: ", " %}
+  {{ my_array.last }}
+</code></pre>
+</p>

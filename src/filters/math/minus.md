@@ -1,9 +1,8 @@
 ---
 title: minus
-description: Subtracts a number from another number.
-liquidjs: https://liquidjs.com/filters/minus.html
-shopify: https://shopify.github.io/liquid/filters/minus/
-shopifyDev: https://shopify.dev/docs/api/liquid/filters/minus
+description: subtracts a number from another number.
+version: 1.9.1
+works: true
 ---
 ### Example 1
 input: {% raw %}

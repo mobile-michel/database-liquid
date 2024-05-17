@@ -1,0 +1,20 @@
+---
+title: find
+description: Return the first object in an array for which the queried attribute has the given value or return nil if no item in the array satisfies the given criteria.
+liquidjs: https://liquidjs.com/filters/find.html
+shopify: https://shopify.github.io/liquid/filters/find/
+shopifyDev: https://shopify.dev/docs/api/liquid/filters/find
+---
+<h3>Example</h3>
+<p>input:
+  {% raw %}
+<pre><code>
+    {{ members | find: "graduation_year", 2004 | json }}
+  </code></pre>
+</p>
+{% endraw %}
+<p>output:
+<pre><code>
+    {{ members | find: "graduation_year", 2004 | json }}
+  </code></pre>
+</p>

@@ -5,14 +5,16 @@ liquidjs: https://liquidjs.com/filters/group_by.html
 shopify: https://shopify.github.io/liquid/filters/group_by/
 shopifyDev: https://shopify.dev/docs/api/liquid/filters/group_by
 ---
-### Input
-<pre>
-{% raw %}
-{{ members | group_by: "graduation_year" | json: 2 }}
+<h3>Example</h3>
+<p>input:
+  {% raw %}
+<pre><code>
+    {{ members | group_by: "graduation_year" | json: 2 }}
+  </code></pre>
+</p>
 {% endraw %}
-</pre>
-
-### Output
-<pre>
-{{ members | group_by: "graduation_year" | json: 2 }}
-</pre>
+<p>output:
+<pre><code>
+    {{ members | group_by: "graduation_year" | json: 2 }}
+  </code></pre>
+</p>

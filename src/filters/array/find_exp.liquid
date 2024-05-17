@@ -1,0 +1,20 @@
+---
+title: find_exp
+description: Return the first object in an array for which the given expression evaluates to true or return nil if no item in the array satisfies the evaluated expression.
+liquidjs: https://liquidjs.com/filters/find_exp.html
+shopify: https://shopify.github.io/liquid/filters/find_exp/
+shopifyDev: https://shopify.dev/docs/api/liquid/filters/find_exp
+---
+<h3>Example</h3>
+<p>input:
+  {% raw %}
+<pre><code>
+  {{ members | find_exp: "item", "item.graduation_year == 2003" | json }}
+  </code></pre>
+</p>
+{% endraw %}
+<p>output:
+<pre><code>
+  {{ members | find_exp: "item", "item.graduation_year == 2003" | json }}
+  </code></pre>
+</p>

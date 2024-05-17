@@ -3,79 +3,136 @@
         "products": [
             {
                 "title": "Blue Mountain Flower",
-                "vendor": "Polina's Potent Potions"
+                "type": "Flower",
+                "vendor": "Polina's Potent Potions",
+                "price": 25.00,
+                "available": true
             },
             {
                 "title": "Charcoal",
-                "vendor": "Ted's Apothecary Supply"
+                "type": "Powder",
+                "vendor": "Ted's Apothecary Supply",
+                "price": 15.00,
+                "available": true
             },
             {
                 "title": "Crocodile tears",
-                "vendor": "Polina's Potent Potions"
+                "type": "Liquid",
+                "vendor": "Polina's Potent Potions",
+                "price": 35.00,
+                "available": true
             },
             {
                 "title": "Dandelion milk",
-                "vendor": "Clover's Apothecary"
+                "type": "Liquid",
+                "vendor": "Clover's Apothecary",
+                "price": 10.00,
+                "available": true
             },
             {
                 "title": "Draught of Immortality",
-                "vendor": "Polina's Potent Potions"
+                "type": "Potion",
+                "vendor": "Polina's Potent Potions",
+                "price": 100.00,
+                "available": false
             },
             {
                 "title": "Dried chamomile",
-                "vendor": "Clover's Apothecary"
+                "type": "Flower",
+                "vendor": "Clover's Apothecary",
+                "price": 5.00,
+                "available": true
             },
             {
                 "title": "Forest mushroom",
-                "vendor": "Clover's Apothecary"
+                "type": "Fungus",
+                "vendor": "Clover's Apothecary",
+                "price": 20.00,
+                "available": true
             },
             {
                 "title": "Gift Card",
-                "vendor": "Polina's Potent Potions"
+                "type": "Card",
+                "vendor": "Polina's Potent Potions",
+                "price": 50.00,
+                "available": true
             },
             {
                 "title": "Glacier ice",
-                "vendor": "Ted's Apothecary Supply"
+                "type": "Crystal",
+                "vendor": "Ted's Apothecary Supply",
+                "price": 30.00,
+                "available": false
             },
             {
                 "title": "Ground mandrake root",
-                "vendor": "Clover's Apothecary"
+                "type": "Powder",
+                "vendor": "Clover's Apothecary",
+                "price": 40.00,
+                "available": false
             },
             {
                 "title": "Health potion",
-                "vendor": "Polina's Potent Potions"
+                "type": "Potion",
+                "vendor": "Polina's Potent Potions",
+                "price": 45.00,
+                "available": false
             },
             {
                 "title": "Invisibility potion",
-                "vendor": "Polina's Potent Potions"
+                "type": "Potion",
+                "vendor": "Polina's Potent Potions",
+                "price": 75.00,
+                "available": false
             },
             {
                 "title": "Komodo dragon scale",
-                "vendor": "Ted's Apothecary Supply"
+                "type": "Scale",
+                "vendor": "Ted's Apothecary Supply",
+                "price": 60.00,
+                "available": false
             },
             {
                 "title": "Love Potion",
-                "vendor": "Polina's Potent Potions"
+                "type": "Potion",
+                "vendor": "Polina's Potent Potions",
+                "price": 55.00,
+                "available": false
             },
             {
                 "title": "Mana potion",
-                "vendor": "Polina's Potent Potions"
+                "type": "Potion",
+                "vendor": "Polina's Potent Potions",
+                "price": 65.00,
+                "available": false
             },
             {
                 "title": "Potion beats",
-                "vendor": "Polina's Potent Potions"
+                "type": "Potion",
+                "vendor": "Polina's Potent Potions",
+                "price": 70.00,
+                "available": false
             },
             {
                 "title": "Potion bottle",
-                "vendor": "Polina's Potent Potions"
+                "type": "Bottle",
+                "vendor": "Polina's Potent Potions",
+                "price": 5.00,
+                "available": false
             },
             {
                 "title": "Viper venom",
-                "vendor": "Ted's Apothecary Supply"
+                "type": "Liquid",
+                "vendor": "Ted's Apothecary Supply",
+                "price": 80.00,
+                "available": false
             },
             {
                 "title": "Whole bloodroot",
-                "vendor": "Clover's Apothecary"
+                "type": "Root",
+                "vendor": "Clover's Apothecary",
+                "price": 90.00,
+                "available": false
             }
         ]
     }

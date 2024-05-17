@@ -1,10 +1,27 @@
 ---
-title: Prepend string filters
-description: Adds the specified string to the beginning of another string.
-liquidjs: https://liquidjs.com/filters/prepend.html
-shopify: https://shopify.github.io/liquid/filters/prepend/
-shopifyDev: https://shopify.dev/docs/api/liquid/filters/prepend/
+title: prepend
+description: adds the specified string to the beginning of another string.
+version: 1.9.1
+works: true
 ---
-{{ "apples, oranges, and bananas" | prepend: "Some fruit: " }}  
-{% assign url = "example.com" %}
+### Example 1
+input: {% raw %}
+<code>
+{{ "apples, oranges, and bananas" | prepend: "Some fruit: " }}
+</code>
+{% endraw %}
+output:
+<code>
+{{ "apples, oranges, and bananas" | prepend: "Some fruit: " }}
+</code>
+### Example 2
+input: {% raw %}
+<code>
+{% assign url = "example.com" %}  
 {{ "/index.html" | prepend: url }}
+</code>
+{% endraw %}
+output:
+<code>{% assign url = "example.com" %}
+{{ "/index.html" | prepend: url }}
+</code>

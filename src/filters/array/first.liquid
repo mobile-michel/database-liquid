@@ -1,0 +1,54 @@
+---
+title: first
+description: Returns the first item of an array.
+version: 1.9.1
+---
+<h3>Example 1</h3>
+<p>input:
+  {% raw %}
+<pre><code>
+    {{ "Ground control to Major Tom." | split: " " | first }}
+</code></pre>
+</p>
+{% endraw %}
+<p>output:
+<pre><code>
+    {{ "Ground control to Major Tom." | split: " " | first }}
+</code></pre>
+</p>
+
+<h3>Example 2</h3>
+<p>input:
+  {% raw %}
+<pre><code>
+    {% assign my_array = "zebra, octopus, giraffe, tiger" | split: ", " %}
+    {{ my_array.first }}
+</code></pre>
+</p>
+{% endraw %}
+<p>output:
+<pre><code>
+    {% assign my_array = "zebra, octopus, giraffe, tiger" | split: ", " %}
+    {{ my_array.first }}
+</code></pre>
+</p>
+
+<h3>Example 3</h3>
+<p>input:
+  {% raw %}
+<pre><code>
+    {% assign my_array = "zebra, octopus, giraffe, tiger" | split: ", " %}
+    {% if my_array.first == "zebra" %}
+    Here comes a zebra!
+    {% endif %}
+</code></pre>
+</p>
+{% endraw %}
+<p>output:
+<pre><code>
+    {% assign my_array = "zebra, octopus, giraffe, tiger" | split: ", " %}
+    {% if my_array.first == "zebra" %}
+    Here comes a zebra!
+    {% endif %}
+</code></pre>
+</p>

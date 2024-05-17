@@ -1,9 +1,8 @@
 ---
 title: at_least
-description: Limits a number to a minimum value.
-liquidjs: https://liquidjs.com/filters/at_least.html
-shopify: https://shopify.github.io/liquid/filters/at_least/
-shopifyDev: https://shopify.dev/docs/api/liquid/filters/at_least/
+description: limits a number to a minimum value.
+version: 8.4.0
+works: true
 ---
 ### Example 1
 input: {% raw %}

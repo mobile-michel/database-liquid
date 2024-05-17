@@ -1,0 +1,33 @@
+---
+title: escape
+description: escapes a string by replacing HTML special characters with escape sequences. It doesn’t change strings that don’t have anything to escape.
+version: 1.9.1
+works: true
+---
+<h3>Example 1</h3>
+<p>input:
+  {% raw %}
+<pre><code>
+  {{ "Have you read 'James & the Giant Peach'?" | escape }}
+</code></pre>
+</p>
+{% endraw %}
+<p>output:
+<pre><code>
+  {{ "Have you read 'James & the Giant Peach'?" | escape }}
+</code></pre>
+</p>
+
+<h3>Example 2</h3>
+<p>input:
+  {% raw %}
+<pre><code>
+  {{ "Tetsuro Takara" | escape }}
+</code></pre>
+</p>
+{% endraw %}
+<p>output:
+<pre><code>
+  {{ "Tetsuro Takara" | escape }}
+</code></pre>
+</p>

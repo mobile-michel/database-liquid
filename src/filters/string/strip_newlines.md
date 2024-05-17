@@ -1,13 +1,22 @@
 ---
-title: Strip_newlines string filters
-description: Removes any newline characters (line breaks) from a string.
-liquidjs: https://liquidjs.com/filters/strip_newlines.html
-shopify: https://shopify.github.io/liquid/filters/strip_newlines/
-shopifyDev: https://shopify.dev/docs/api/liquid/filters/strip_newlines
+title: strip_newlines
+description: removes any newline characters (line breaks) from a string.
+version: 1.9.1
+works: true
 ---
-{% capture string_with_newlines %}
+### Example
+input: {% raw %}
+<code>{% capture string_with_newlines %}  
+Hello  
+there  
+{% endcapture %}  
+{{ string_with_newlines | strip_newlines }}
+</code>
+{% endraw %}
+output:
+<code>{% capture string_with_newlines %}
 Hello
 there
 {% endcapture %}
-
 {{ string_with_newlines | strip_newlines }}
+</code>

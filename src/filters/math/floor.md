@@ -1,9 +1,8 @@
 ---
 title: floor
-description: Rounds the input down to the nearest whole number. LiquidJS tries to convert the input to a number before the filter is applied.
-liquidjs: https://liquidjs.com/filters/floor.html
-shopify: https://shopify.github.io/liquid/filters/floor/
-shopifyDev: https://shopify.dev/docs/api/liquid/filters/floor
+description: rounds the input down to the nearest whole number. LiquidJS tries to convert the input to a number before the filter is applied.
+version: 1.9.1
+works: true
 ---
 ### Example 1
 input: {% raw %}

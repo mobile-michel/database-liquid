@@ -1,0 +1,25 @@
+---
+title: map
+description: Creates an array of values by extracting the values of a named property from another object.
+version: 1.9.1
+---
+<h3>Example 1</h3>
+<p>input:
+    {% raw %}
+<pre><code>
+        {% assign all_categories = site.pages | map: "category" %}
+        {% for item in all_categories %}
+        - {{ item }}
+        {%- endfor %}
+    </code></pre>
+</p>
+{% endraw %}
+<p>output:
+<pre><code>{% assign all_categories = site.pages | map: "category" %}
+        {% for item in all_categories %}
+        - {{ item }}
+        {%- endfor %}
+    </code></pre>
+</p>
+
+In this example, assume the object <kbd>site.pages</kbd> contains all the metadata for a website. Using <kbd>assign</kbd> with the <kbd>map</kbd> filter creates a variable that contains only the values of the <kbd>category</kbd> properties of everything in the <kbd>site.pages</kbd> object.

@@ -1,0 +1,20 @@
+---
+title: group_by_exp
+description: Group an array’s items using a Liquid expression.
+liquidjs: https://liquidjs.com/filters/group_by_exp.html
+shopify: https://shopify.github.io/liquid/filters/group_by_exp/
+shopifyDev: https://shopify.dev/docs/api/liquid/filters/group_by_exp
+---
+<h3>Example</h3>
+<p>input:
+  {% raw %}
+<pre><code>
+    {{ members | group_by_exp: "item", "item.graduation_year | truncate: 3, ''" | json: 2 }}
+  </code></pre>
+</p>
+{% endraw %}
+<p>output:
+<pre><code>
+    {{ members | group_by_exp: "item", "item.graduation_year | truncate: 3, ''" | json: 2 }}
+  </code></pre>
+</p>

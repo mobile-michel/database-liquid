@@ -1,9 +1,8 @@
 ---
 title: plus
-description: Adds a number to another number.
-liquidjs: https://liquidjs.com/filters/plus.html
-shopify: https://shopify.github.io/liquid/filters/plus/
-shopifyDev: https://shopify.dev/docs/api/liquid/filters/plus
+description: adds a number to another number.
+version: 1.9.1
+works: true
 ---
 ### Example 1
 input: {% raw %}

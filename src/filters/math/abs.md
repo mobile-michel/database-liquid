@@ -1,9 +1,8 @@
 ---
 title: abs
-description: Liquid filter that returns the absolute value of a number.
-liquidjs: https://liquidjs.com/filters/abs.html
-shopify: https://shopify.github.io/liquid/filters/abs/
-shopifyDev: https://shopify.dev/docs/api/liquid/filters/abs
+description: returns the absolute value of a number.
+version: 1.9.1
+works: true
 ---
 ### Example 1
 input: {% raw %}

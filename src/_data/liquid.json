@@ -71,127 +71,106 @@
                     {
                         "elementName": "append",
                         "elementDescription": "append string to input.",
-                        "liquidjsUrl": "filters/append.html",
                         "version": "1.9.1"
                     },
                     {
                         "elementName": "prepend",
                         "elementDescription": "prepend string to input.",
-                        "liquidjsUrl": "filters/prepend.html",
                         "version": "1.9.1"
                     },
                     {
-                        "elementName": "capitalized",
+                        "elementName": "capitalize",
                         "elementDescription": "capitalize first letter of input.",
-                        "liquidjsUrl": "filters/capitalized.html",
                         "version": "1.9.1"
                     },
                     {
                         "elementName": "upcase",
                         "elementDescription": "convert input to uppercase.",
-                        "liquidjsUrl": "filters/upcase.html",
                         "version": "1.9.1"
                     },
                     {
                         "elementName": "downcase",
                         "elementDescription": "convert input to lowercase.",
-                        "liquidjsUrl": "filters/downcase.html",
                         "version": "1.9.1"
                     },
                     {
                         "elementName": "strip",
                         "elementDescription": "remove whitespace from input.",
-                        "liquidjsUrl": "filters/strip.html",
                         "version": "1.9.1"
                     },
                     {
                         "elementName": "lstrip",
                         "elementDescription": "Removes all whitespace (tabs, spaces, and newlines) from the left side of a string.",
-                        "liquidjsUrl": "filters/lstrip.html",
                         "version": "1.9.1"
                     },
                     {
                         "elementName": "rstrip",
                         "elementDescription": "Removes all whitespace (tabs, spaces, and newlines) from the right side of a string.",
-                        "liquidjsUrl": "filters/rstrip.html",
                         "version": "1.9.1"
                     },
                     {
                         "elementName": "strip_newlines",
                         "elementDescription": "Removes any newline characters (line breaks) from a string.",
-                        "liquidjsUrl": "filters/strip_newlines.html",
                         "version": "1.9.1"
                     },
                     {
                         "elementName": "split",
                         "elementDescription": "Divides a string into an array using the argument as a separator.",
-                        "liquidjsUrl": "filters/split.html",
                         "version": "1.9.1"
                     },
                     {
                         "elementName": "replace",
                         "elementDescription": "Replaces every occurrence of the first argument in a string with the second argument.",
-                        "liquidjsUrl": "filters/replace.html",
                         "version": "1.9.1"
                     },
                     {
                         "elementName": "replace_first",
                         "elementDescription": "Replaces only the first occurrence of the first argument in a string with the second argument.",
-                        "liquidjsUrl": "filters/replace_first.html",
                         "version": "1.9.1"
                     },
                     {
-                        "elementName": "last",
+                        "elementName": "replace_last",
                         "elementDescription": "Replaces only the last occurrence of the first argument in a string with the second argument.",
-                        "liquidjsUrl": "filters/replace_last.html",
                         "version": "10.2.0"
                     },
                     {
                         "elementName": "remove",
                         "elementDescription": "Removes every occurrence of the specified substring from a string.",
-                        "liquidjsUrl": "filters/remove.html",
                         "version": "1.9.1"
                     },
                     {
                         "elementName": "remove_first",
                         "elementDescription": "Removes only the first occurrence of the specified substring from a string.",
-                        "liquidjsUrl": "filters/remove_first.html",
                         "version": "1.9.1"
                     },
                     {
                         "elementName": "remove_last",
                         "elementDescription": "Removes only the last occurrence of the specified substring from a string.",
-                        "liquidjsUrl": "filters/remove_last.html",
                         "version": "10.2.0"
                     },
                     {
                         "elementName": "truncate",
                         "elementDescription": "Shortens a string down to the number of characters passed as an argument.",
-                        "liquidjsUrl": "filters/truncate.html",
                         "version": "1.9.1"
                     },
                     {
                         "elementName": "truncatewords",
                         "elementDescription": "Shortens a string down to the number of words passed as an argument.",
-                        "liquidjsUrl": "filters/truncatewords.html",
                         "version": "1.9.1"
                     },
                     {
                         "elementName": "normalize_whitespace",
                         "elementDescription": "Replace any occurrence of whitespace with a single space.",
-                        "liquidjsUrl": "filters/normalize_whitespace.html",
                         "version": "10.13.0"
                     },
                     {
                         "elementName": "number_of_words",
                         "elementDescription": "Count the number of words in some text.",
-                        "liquidjsUrl": "filters/number_of_words.html",
                         "version": "10.13.0"
                     },
                     {
                         "elementName": "array_to_sentence_string",
                         "elementDescription": "Convert an array into a sentence, useful for listing tags.",
-                        "liquidjsUrl": "filters/array_to_sentence_string.html",
                         "version": "10.13.0"
                     }
                 ]
@@ -203,133 +182,111 @@
                     {
                         "elementName": "slice",
                         "elementDescription": "Returns a substring of 1 character beginning at the index specified by the first argument.",
-                        "liquidjsUrl": "filters/slice.html",
                         "version": "1.9.1"
                     },
                     {
                         "elementName": "map",
                         "elementDescription": "Creates an array of values by extracting the values of a named property from another object.",
-                        "liquidjsUrl": "filters/map.html",
                         "version": "1.9.1"
                     },
                     {
                         "elementName": "sort",
                         "elementDescription": "Sorts items in an array in case-sensitive order.",
-                        "liquidjsUrl": "filters/sort.html",
                         "version": "1.9.1"
                     },
                     {
                         "elementName": "sort_natural",
                         "elementDescription": "Sorts items in an array in case-insensitive order.",
-                        "liquidjsUrl": "filters/sort_natural.html",
                         "version": "8.4.0"
                     },
                     {
                         "elementName": "uniq",
                         "elementDescription": "remove duplicate elements from array.",
-                        "liquidjsUrl": "filters/uniq.html",
                         "version": "1.9.1"
                     },
                     {
                         "elementName": "where",
                         "elementDescription": "Creates an array including only the objects with a given property value, or any truthy value by default.",
-                        "liquidjsUrl": "filters/where.html",
                         "version": "8.1.0"
                     },
                     {
                         "elementName": "where_exp",
                         "elementDescription": "Select all the objects in an array where the expression is true.",
-                        "liquidjsUrl": "filters/where_exp.html",
                         "version": "10.12.0"
                     },
                     {
                         "elementName": "group_by",
                         "elementDescription": "Group an array’s items by a given property.",
-                        "liquidjsUrl": "filters/group_by.html",
                         "version": "10.11.0"
                     },
                     {
                         "elementName": "group_by_exp",
                         "elementDescription": "Group an array’s items using a Liquid expression.",
-                        "liquidjsUrl": "filters/group_by_exp.html",
                         "version": "10.11.0"
                     },
                     {
                         "elementName": "find",
                         "elementDescription": "Return the first object in an array for which the queried attribute has the given value or return nil if no item in the array satisfies the given criteria.",
-                        "liquidjsUrl": "filters/find.html",
                         "version": "10.11.0"
                     },
                     {
                         "elementName": "find_exp",
                         "elementDescription": "Return the first object in an array for which the given expression evaluates to true or return nil if no item in the array satisfies the evaluated expression.",
-                        "liquidjsUrl": "filters/find_exp.html",
                         "version": "10.11.0"
                     },
                     {
                         "elementName": "first",
                         "elementDescription": "Returns the first item of an array.",
-                        "liquidjsUrl": "filters/first.html",
                         "version": "1.9.1"
                     },
                     {
                         "elementName": "last",
                         "elementDescription": "Returns the last item of an array.",
-                        "liquidjsUrl": "filters/last.html",
                         "version": "1.9.1"
                     },
                     {
                         "elementName": "join",
                         "elementDescription": "Combines the items in an array into a single string using the argument as a separator.",
-                        "liquidjsUrl": "filters/join.html",
                         "version": "1.9.1"
                     },
                     {
                         "elementName": "reverse",
                         "elementDescription": "Reverses the order of the items in an array.",
-                        "liquidjsUrl": "filters/reverse.html",
                         "version": "1.9.1"
                     },
                     {
                         "elementName": "concat",
                         "elementDescription": "Concatenates (joins together) multiple arrays, the resulting array contains all the items from the input arrays.",
-                        "liquidjsUrl": "filters/concat.html",
                         "version": "2.0.0"
                     },
                     {
                         "elementName": "compact",
                         "elementDescription": "Removes any nil values from an array.",
-                        "liquidjsUrl": "filters/compact.html",
                         "version": "9.22.0"
                     },
                     {
                         "elementName": "size",
                         "elementDescription": "Returns the number of characters in a string or the number of items in an array.",
-                        "liquidjsUrl": "filters/size.html",
                         "version": "1.9.1"
                     },
                     {
                         "elementName": "push",
                         "elementDescription": "Push an element into array. It’s NON-DESTRUCTIVE, i.e. it does not mutate the array, but rather make a copy and mutate that.",
-                        "liquidjsUrl": "filters/push.html",
                         "version": "10.8.0"
                     },
                     {
                         "elementName": "pop",
                         "elementDescription": "Pop an element from the array. It’s NON-DESTRUCTIVE, i.e. it does not mutate the array, but rather make a copy and mutate that.",
-                        "liquidjsUrl": "filters/pop.html",
                         "version": "10.11.0"
                     },
                     {
                         "elementName": "shift",
                         "elementDescription": "Shift an element from the array. It’s NON-DESTRUCTIVE, i.e. it does not mutate the array, but rather make a copy and mutate that.",
-                        "liquidjsUrl": "filters/shift.html",
                         "version": "10.11.0"
                     },
                     {
                         "elementName": "unshift",
                         "elementDescription": "Unshift an element to the front of the array. It’s NON-DESTRUCTIVE, i.e. it does not mutate the array, but rather make a copy and mutate that.",
-                        "liquidjsUrl": "filters/unshift.html",
                         "version": "10.11.0"
                     }
                 ]
@@ -465,17 +422,17 @@
                     {
                         "elementName": "for",
                         "elementDescription": "iteration tags run blocks of code repeatedly.",
-                        "liquidjsUrl": "tags/for.html"
+                        "version": "1.9.1"
                     },
                     {
                         "elementName": "cycle",
                         "elementDescription": "loops through a group of strings and prints them in the order that they were passed as arguments.",
-                        "liquidjsUrl": "tags/cycle.html"
+                        "version": "1.9.1"
                     },
                     {
                         "elementName": "tablerow",
                         "elementDescription": "generates an HTML table.",
-                        "liquidjsUrl": "tags/tablerow.html"
+                        "version": "1.9.1"
                     }
                 ]
             },
@@ -486,32 +443,32 @@
                     {
                         "elementName": "if",
                         "elementDescription": "executes a block of code only if a certain condition is true.",
-                        "liquidjsUrl": "tags/if.html"
+                        "version": "1.9.1"
                     },
                     {
                         "elementName": "unless",
                         "elementDescription": "executes a block of code only if a certain condition is not met.",
-                        "liquidjsUrl": "tags/unless.html"
+                        "version": "1.9.1"
                     },
                     {
                         "elementName": "elsif",
                         "elementDescription": "adds more conditions within an if or unless block.",
-                        "liquidjsUrl": "tags/elsif.html"
+                        "version": "1.9.1"
                     },
                     {
                         "elementName": "else",
                         "elementDescription": "adds more conditions within an if or unless block.",
-                        "liquidjsUrl": "tags/else.html"
+                        "version": "1.9.1"
                     },
                     {
                         "elementName": "case",
                         "elementDescription": "creates a switch statement to compare a variable with different values.",
-                        "liquidjsUrl": "tags/case.html"
+                        "version": "1.9.1"
                     },
                     {
                         "elementName": "when",
                         "elementDescription": "creates a switch statement to compare a variable with different values.",
-                        "liquidjsUrl": "tags/when.html"
+                        "version": "1.9.1"
                     }
                 ]
             },
@@ -522,27 +479,27 @@
                     {
                         "elementName": "assign",
                         "elementDescription": "creates a new variable.",
-                        "liquidjsUrl": "tags/assign.html"
+                        "version": "1.9.1"
                     },
                     {
                         "elementName": "increment",
                         "elementDescription": "creates a new number variable, and increases its value by one every time it is called.",
-                        "liquidjsUrl": "tags/increment.html"
+                        "version": "1.9.1"
                     },
                     {
                         "elementName": "decrement",
                         "elementDescription": "creates a new number variable, and decreases its value by one every time it is called.",
-                        "liquidjsUrl": "tags/decrement.html"
+                        "version": "1.9.1"
                     },
                     {
                         "elementName": "capture",
                         "elementDescription": "captures the string inside of the opening and closing tags and assigns it to a variable.",
-                        "liquidjsUrl": "tags/capture.html"
+                        "version": "1.9.1"
                     },
                     {
                         "elementName": "echo",
                         "elementDescription": "outputs an expression in the rendered HTML.",
-                        "liquidjsUrl": "tags/echo.html"
+                        "version": "9.31.0"
                     }
                 ]
             },
@@ -552,15 +509,18 @@
                 "elements": [
                     {
                         "elementName": "render",
-                        "elementDescription": "render a partial template from partials directory."
+                        "elementDescription": "render a partial template from partials directory.",
+                        "version": "9.2.0"
                     },
                     {
                         "elementName": "include",
-                        "elementDescription": "*deprecated*, use render instead."
+                        "elementDescription": "*deprecated*, use render instead.",
+                        "version": "1.9.1"
                     },
                     {
                         "elementName": "layout",
-                        "elementDescription": "introduce a layout template for the current template to render in."
+                        "elementDescription": "introduce a layout template for the current template to render in.",
+                        "version": "1.9.1"
                     }
                 ]
             },
@@ -570,19 +530,23 @@
                 "elements": [
                     {
                         "elementName": "# (inline comment)",
-                        "elementDescription": "add comments to a Liquid template using an inline tag."
+                        "elementDescription": "add comments to a Liquid template using an inline tag.",
+                        "version": "9.38.0"
                     },
                     {
                         "elementName": "raw",
-                        "elementDescription": "raw temporarily disables tag processing."
+                        "elementDescription": "raw temporarily disables tag processing.",
+                        "version": "1.9.1"
                     },
                     {
                         "elementName": "comment",
-                        "elementDescription": "allows you to leave un-rendered code inside a Liquid template."
+                        "elementDescription": "allows you to leave un-rendered code inside a Liquid template.",
+                        "version": "1.9.1"
                     },
                     {
                         "elementName": "liquid",
-                        "elementDescription": "encloses multiple tags within one set of delimiters, to allow writing Liquid logic more concisely."
+                        "elementDescription": "encloses multiple tags within one set of delimiters, to allow writing Liquid logic more concisely.",
+                        "version": "9.31.0"
                     }
                 ]
             }

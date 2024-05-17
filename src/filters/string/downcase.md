@@ -1,9 +1,26 @@
 ---
-title: Downcase string filters
-description: Makes each character in a string lowercase. It has no effect on strings which are already all lowercase.
-liquidjs: https://liquidjs.com/filters/downcase.html
-shopify: https://shopify.github.io/liquid/filters/downcase/
-shopifyDev: https://shopify.dev/docs/api/liquid/filters/downcase
+title: downcase
+description: makes each character in a string lowercase. It has no effect on strings which are already all lowercase.
+version: 1.9.1
+works: true
 ---
-{{ "Parker Moore" | downcase }}  
+### Example 1
+input: {% raw %}
+<code>
+{{ "Parker Moore" | downcase }}
+</code>
+{% endraw %}
+output:
+<code>
+{{ "Parker Moore" | downcase }}
+</code>
+### Example 2
+input: {% raw %}
+<code>
 {{ "apple" | downcase }}
+</code>
+{% endraw %}
+output:
+<code>
+{{ "apple" | downcase }}
+</code>

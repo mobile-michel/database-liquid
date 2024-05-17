@@ -1,9 +1,8 @@
 ---
 title: divided_by
-description: Divides a number by another number. The result is the string obtained by JavaScript .toString() of the result number.
-liquidjs: https://liquidjs.com/filters/divided_by.html
-shopify: https://shopify.github.io/liquid/filters/divided_by/
-shopifyDev: https://shopify.dev/docs/api/liquid/filters/divided_by/
+description: divides a number by another number. The result is the string obtained by JavaScript .toString() of the result number.
+version: 1.9.1
+works: true
 ---
 ### Example 1
 input: {% raw %}

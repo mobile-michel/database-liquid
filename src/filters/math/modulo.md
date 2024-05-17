@@ -1,9 +1,8 @@
 ---
 title: modulo
-description: Returns the remainder of a division operation.
-liquidjs: https://liquidjs.com/filters/modulo.html
-shopify: https://shopify.github.io/liquid/filters/modulo/
-shopifyDev: https://shopify.dev/docs/api/liquid/filters/modulo
+description: returns the remainder of a division operation.
+version: 1.9.1
+works: true
 ---
 ### Example 1
 input: {% raw %}

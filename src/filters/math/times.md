@@ -1,9 +1,8 @@
 ---
 title: times
-description: Multiplies a number by another number.
-liquidjs: https://liquidjs.com/filters/times.html
-shopify: https://shopify.github.io/liquid/filters/times/
-shopifyDev: https://shopify.dev/docs/api/liquid/filters/times
+description: multiplies a number by another number.
+version: 1.9.1
+works: true
 ---
 ### Example 1
 input: {% raw %}

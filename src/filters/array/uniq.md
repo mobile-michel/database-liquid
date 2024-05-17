@@ -5,5 +5,14 @@ liquidjs: https://liquidjs.com/filters/uniq.html
 shopify: https://shopify.github.io/liquid/filters/uniq/
 shopifyDev: https://shopify.dev/docs/api/liquid/filters/uniq
 ---
-{% assign my_array = "ants, bugs, bees, bugs, ants" | split: ", " %}
+### Example 1
+input: {% raw %}
+<code>
+{% assign my_array = "ants, bugs, bees, bugs, ants" | split: ", " %}  
 {{ my_array | uniq | join: ", " }}
+</code>
+{% endraw %}
+output:
+<code>{% assign my_array = "ants, bugs, bees, bugs, ants" | split: ", " %}
+{{ my_array | uniq | join: ", " }}
+</code>

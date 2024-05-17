@@ -14,11 +14,11 @@
 <body>
     {% include 'nav' %}
     <main class="container">
-        <h1>{{ title }}</h1>
-        <blockquote>{{ description }}</blockquote>
-        <p><a href="{{ liquidjs }}">{{ liquidjs }}</a><br>
-            <a href="{{ shopify }}">{{ shopify }}</a><br>
-            <a href="{{ shopifyDev }}">{{ shopifyDev }}</a></p>
+        <h1>{{ title | capitalize }}</h1>
+        <blockquote>{{ description | capitalize }}</blockquote>
+        {% if version %}
+        <p>Documentation: <a href="https://liquidjs.com/filters/{{ title }}.html" target="_blank">LiquidJS</a> | <a href="https://shopify.github.io/liquid/filters/{{ title }}/" target="_blank">Shopify</a> | <a href="https://shopify.dev/docs/api/liquid/filters/{{ title }}" target="_blank">Shopify.dev</a> - Version: {{ version }} {% if works %}(it works){% else %}(it does not work){% endif %}</p>
+        {% endif %}
         {{ content }}
     </main>
     {% include 'footer' %}

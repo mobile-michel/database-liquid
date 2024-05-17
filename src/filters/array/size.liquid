@@ -1,0 +1,57 @@
+---
+title: size
+description: Returns the number of characters in a string or the number of items in an array.
+version: 1.9.1
+works: true
+---
+<h3>Example 1</h3>
+<p>input:
+  {% raw %}
+<pre><code>
+    {{ "Ground control to Major Tom." | size }}
+  </code></pre>
+</p>
+{% endraw %}
+<p>output:
+<pre><code>
+    {{ "Ground control to Major Tom." | size }}
+  </code></pre>
+</p>
+
+<h3>Example 2</h3>
+<p>input:
+  {% raw %}
+<pre><code>
+    {% assign my_array = "apples, oranges, peaches, plums" | split: ", " %}
+    {{ my_array.size }}
+  </code></pre>
+</p>
+{% endraw %}
+<p>output:
+<pre><code>
+    {% assign my_array = "apples, oranges, peaches, plums" | split: ", " %}
+    {{ my_array.size }}
+  </code></pre>
+</p>
+
+<h3>Example 3</h3>
+<p>input:
+  {% raw %}
+<pre><code>
+    {% if site.pages.size > 10 %}
+    This is a big website!
+    {% else %}
+    This is a small website!
+    {% endif %}
+  </code></pre>
+</p>
+{% endraw %}
+<p>output:
+<pre><code>
+    {% if site.pages.size > 10 %}
+    This is a big website!
+    {% else %}
+    This is a small website!
+    {% endif %}
+  </code></pre>
+</p>

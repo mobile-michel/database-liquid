@@ -1,9 +1,8 @@
 ---
 title: at_most
-description: Limits a number to a maximum value.
-liquidjs: https://liquidjs.com/filters/at_most.html
-shopify: https://shopify.github.io/liquid/filters/at_most/
-shopifyDev: https://shopify.dev/docs/api/liquid/filters/at_most/
+description: limits a number to a maximum value.
+version: 8.4.0
+works: true
 ---
 ### Example 1
 input: {% raw %}

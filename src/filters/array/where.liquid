@@ -1,0 +1,89 @@
+---
+title: where
+description: Creates an array including only the objects with a given property value, or any truthy value by default.
+liquidjs: https://liquidjs.com/filters/where.html
+shopify: https://shopify.github.io/liquid/filters/where/
+shopifyDev: https://shopify.dev/docs/api/liquid/filters/where
+---
+<h3>Example 1</h3>
+<p>input:
+{% raw %}
+<pre><code>All products:
+{% for product in products.collection.products %}
+- {{ product.title }}
+{% endfor %}
+{% assign liquid_products = products.collection.products | where: "type", "Liquid" %}
+Liquid products:
+{% for product in liquid_products %}
+- {{ product.title }}
+{% endfor %}
+</code></pre></p>
+{% endraw %}
+<p>output:
+<pre><code>
+<strong>All products:</strong>
+{% for product in products.collection.products %}
+- {{ product.title }}
+{%- endfor %}
+{% assign liquid_products = products.collection.products | where: "type", "Liquid" %}
+<strong>Liquid products</strong>:
+{% for product in liquid_products %}
+- {{ product.title }}
+{%- endfor %}
+</code></pre></p>
+
+<h3>Example 2</h3>
+<p>input:
+{% raw %}
+<pre><code>
+Liquid products:
+{% for product in available_products %}
+- {{ product.title }}
+{% endfor %}
+</code></pre></p>
+{% endraw %}
+<p>output:
+<pre><code>{% assign available_products = products.collection.products | where: "available" %}
+<strong>Available products</strong>:
+{% for product in available_products %}
+- {{ product.title }}
+{%- endfor %}
+</code></pre></p>
+
+<h3>Example 3</h3>
+<p>input:
+{% raw %}
+<pre><code>{% assign new_potion = products.collection.products | where: "type", "Potion" | first %}
+Featured product: {{ new_potion.title }}
+</code></pre></p>
+{% endraw %}
+<p>output:
+<pre><code>{% assign new_potion = products.collection.products | where: "type", "Potion" | first %}
+Featured product: {{ new_potion.title }}
+</code></pre></p>
+
+<h3>Example 4</h3>
+<p>input:
+{% raw %}
+    <pre><code>const products = [
+        { meta: { details: { class: 'A' } }, order: 1 },
+        { meta: { details: { class: 'B' } }, order: 2 },
+        { meta: { details: { class: 'B' } }, order: 3 }
+    ]
+    {% assign selected = products | where: 'meta.details["class"]', "B" %}
+    {% for item in selected -%}
+    - {{ item.order }}
+    {% endfor %}
+</code></pre></p>
+{% endraw %}
+<p>output:
+<pre><code>const products = [
+    { meta: { details: { class: 'A' } }, order: 1 },
+    { meta: { details: { class: 'B' } }, order: 2 },
+    { meta: { details: { class: 'B' } }, order: 3 }
+]
+{% assign selected = products | where: 'meta.details["class"]', "B" %}
+{% for item in selected -%}
+- {{ item.order }}
+{% endfor %}
+</code></pre></p>

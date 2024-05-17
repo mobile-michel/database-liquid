@@ -1,8 +1,31 @@
-{    
+{
     "name": "database-liquid",
     "description": "List of tags and filters for Liquid templates",
     "url": "https://database-liquid.netlify.app/",
     "authorName": "Michel Maillard",
     "authorUrl": "https://michelmaillard.ch/",
-    "favicon": "https://11ty.recipes/images/meta/favicon.svg"
+    "favicon": "https://11ty.recipes/images/meta/favicon.svg",
+    "pages": [
+        {
+            "category": "business"
+        },
+        {
+            "category": "celebrities"
+        },
+        {
+            "category": ""
+        },
+        {
+            "category": "lifestyle"
+        },
+        {
+            "category": "sports"
+        },
+        {
+            "category": ""
+        },
+        {
+            "category": "technology"
+        }
+    ]
 }

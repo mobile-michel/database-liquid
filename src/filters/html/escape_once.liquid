@@ -1,0 +1,33 @@
+---
+title: escape_once
+description: escapes a string without changing existing escaped entities. It doesn’t change strings that don’t have anything to escape.
+version: 1.9.1
+works: true
+---
+<h3>Example 1</h3>
+<p>input:
+    {% raw %}
+<pre><code>
+    {{ "1 < 2 & 3" | escape_once }}
+    </code></pre>
+</p>
+{% endraw %}
+<p>output:
+<pre><code>
+    {{ "1 < 2 & 3" | escape_once }}
+    </code></pre>
+</p>
+
+<h3>Example 2</h3>
+<p>input:
+    {% raw %}
+<pre><code>
+    {{ "1 &lt; 2 &amp; 3" | escape_once }}
+    </code></pre>
+</p>
+{% endraw %}
+<p>output:
+<pre><code>
+    {{ "1 &lt; 2 &amp; 3" | escape_once }}
+    </code></pre>
+</p>

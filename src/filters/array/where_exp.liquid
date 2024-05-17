@@ -1,0 +1,28 @@
+---
+title: where_exp
+description: Select all the objects in an array where the expression is true.
+liquidjs: https://liquidjs.com/filters/where_exp.html
+shopify: https://shopify.github.io/liquid/filters/where_exp/
+shopifyDev: https://shopify.dev/docs/api/liquid/filters/where_exp
+---
+<h3>Example</h3>
+<p>input:
+  {% raw %}
+<pre><code>
+    {% assign liquid_products = products.collection.products | where_exp: "item", "item.type == 'Liquid'" %}
+    Liquid products:
+    {% for product in liquid_products %}
+    - {{ product.title }}
+    {% endfor %}
+  </code></pre>
+</p>
+{% endraw %}
+<p>output:
+<pre><code>
+    {% assign liquid_products = products.collection.products | where_exp: "item", "item.type == 'Liquid'" %}
+    Liquid products:
+    {% for product in liquid_products %}
+    - {{ product.title }}
+    {%- endfor %}
+  </code></pre>
+</p>

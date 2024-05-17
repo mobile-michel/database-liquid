@@ -1,9 +1,8 @@
 ---
 title: ceil
-description: Rounds the input up to the nearest whole number. LiquidJS tries to convert the input to a number before the filter is applied.
-liquidjs: https://liquidjs.com/filters/ceil.html
-shopify: https://shopify.github.io/liquid/filters/ceil/
-shopifyDev: https://shopify.dev/docs/api/liquid/filters/ceil
+description: rounds the input up to the nearest whole number. LiquidJS tries to convert the input to a number before the filter is applied.
+version: 1.9.1
+works: true
 ---
 ### Example 1
 input: {% raw %}

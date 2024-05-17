@@ -1,0 +1,45 @@
+---
+title: compact
+description: Removes any nil values from an array.
+version: 9.22.0
+works: false
+---
+<h3>Example 1</h3>
+<p>input:
+  {% raw %}
+<pre><code>
+  {% assign site_categories = site.pages | map: "category" %}
+  {% for category in site_categories %}
+  - {{ category }}
+  {% endfor %}
+</code></pre>
+</p>
+{% endraw %}
+<p>output:
+<pre><code>
+  {% assign site_categories = site.pages | map: "category" %}
+  {% for category in site_categories %}
+  - {{ category }}
+  {% endfor %}
+</code></pre>
+</p>
+
+<h3>Example 2</h3>
+<p>input:
+  {% raw %}
+<pre><code>
+  {% assign site_categories = site.pages | map: "category" | compact %}
+  {% for category in site_categories %}
+  - {{ category }}
+  {% endfor %}
+</code></pre>
+</p>
+{% endraw %}
+<p>output:
+<pre><code>
+  {% assign site_categories = site.pages | map: "category" | compact %}
+  {% for category in site_categories %}
+  - {{ category }}
+  {% endfor %}
+</code></pre>
+</p>

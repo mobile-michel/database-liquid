@@ -1,9 +1,8 @@
 ---
 title: round
-description: Rounds a number to the nearest integer or, if a number is passed as an argument, to that number of decimal places.
-liquidjs: https://liquidjs.com/filters/round.html
-shopify: https://shopify.github.io/liquid/filters/round/
-shopifyDev: https://shopify.dev/docs/api/liquid/filters/round
+description: rounds a number to the nearest integer or, if a number is passed as an argument, to that number of decimal places.
+version: 1.9.1
+works: true
 ---
 ### Example 1
 input: {% raw %}
