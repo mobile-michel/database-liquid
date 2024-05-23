@@ -4,30 +4,7 @@ description: escapes a string by replacing HTML special characters with escape s
 version: 1.9.1
 works: true
 ---
-<h3>Example 1</h3>
-<p>input:
-  {% raw %}
-<pre><code>
-  {{ "Have you read 'James & the Giant Peach'?" | escape }}
-</code></pre>
-</p>
-{% endraw %}
-<p>output:
-<pre><code>
-  {{ "Have you read 'James & the Giant Peach'?" | escape }}
-</code></pre>
-</p>
-
-<h3>Example 2</h3>
-<p>input:
-  {% raw %}
-<pre><code>
-  {{ "Tetsuro Takara" | escape }}
-</code></pre>
-</p>
-{% endraw %}
-<p>output:
-<pre><code>
-  {{ "Tetsuro Takara" | escape }}
-</code></pre>
-</p>
+{% assign formula = "Have you read &#39;James &amp; the Giant Peach&#39;?" %}
+{% render 'example-raw', number: 1, input: "{{ Have you read 'James & the Giant Peach'? | escape }}", output: formula %}
+{% assign formula = "Tetsuro Takara" %}
+{% render 'example-raw', number: 2, input: "{{ Tetsuro Takara | escape }}", output: formula %}

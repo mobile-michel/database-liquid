@@ -1,0 +1,24 @@
+---
+title: Newline_to_br
+description: Replaces every newline (\n) in a string with an HTML line break (<br />).
+version: 1.9.1
+works: true
+---
+<h3>Example 1</h3>
+<p>input:
+<pre><code>
+        {% raw %}
+        {% capture string_with_newlines %}
+        Hello
+        there
+        {% endcapture %}
+
+        {{ string_with_newlines | newline_to_br }}
+        {% endraw %}
+    </code></pre>
+</p>
+<p>output:
+<pre><code>
+        {{ code }}
+    </code></pre>
+</p>

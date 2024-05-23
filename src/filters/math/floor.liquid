@@ -1,0 +1,58 @@
+---
+title: floor
+description: rounds the input down to the nearest whole number. LiquidJS tries to convert the input to a number before the filter is applied.
+version: 1.9.1
+works: true
+---
+<h3>Example 1</h3>
+<p>input:
+  {% raw %}
+<pre><code>
+  {{ 1.2 | floor }}
+</code></pre>
+</p>
+{% endraw %}
+<p>output:
+<pre><code>
+  {{ 1.2 | floor }}
+</code></pre>
+</p>
+<h3>Example 2</h3>
+<p>input:
+  {% raw %}
+<pre><code>
+  {{ 2.0 | floor }}
+</code></pre>
+</p>
+{% endraw %}
+<p>output:
+<pre><code>
+  {{ 2.0 | floor }}
+</code></pre>
+</p>
+<h3>Example 3</h3>
+<p>input:
+  {% raw %}
+<pre><code>
+  {{ 183.357 | floor }}
+</code></pre>
+</p>
+{% endraw %}
+<p>output:
+<pre><code>
+  {{ 183.357 | floor }}
+</code></pre>
+</p>
+<h3>Example 4</h3>
+<p>input:
+  {% raw %}
+<pre><code>
+  {{ "3.5" | floor }}
+</code></pre>
+</p>
+{% endraw %}
+<p>output:
+<pre><code>
+  {{ "3.5" | floor }}
+</code></pre>
+</p>

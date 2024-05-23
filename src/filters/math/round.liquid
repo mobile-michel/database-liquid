@@ -1,0 +1,14 @@
+---
+title: round
+description: rounds a number to the nearest integer or, if a number is passed as an argument, to that number of decimal places.
+version: 1.9.1
+works: true
+---
+{% assign formula = 1.2 | round %}
+{% render 'example', number: 1, text: '1.2 | round', code: formula %}
+
+{% assign formula = 2.7 | round %}
+{% render 'example', number: 2, text: '2.7 | round', code: formula %}
+
+{% assign formula = 183.357 | round %}
+{% render 'example', number: 3, text: '183.357 | round', code: formula %}

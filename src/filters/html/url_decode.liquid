@@ -4,16 +4,5 @@ description: decodes a string that has been encoded as a URL.
 version: 6.1.0
 works: true
 ---
-<h3>Example 1</h3>
-<p>input:
-    {% raw %}
-<pre><code>
-        {{ "%27Stop%21%27+said+Fred" | url_decode }}
-    </code></pre>
-</p>
-{% endraw %}
-<p>output:
-<pre><code>
-        {{ "%27Stop%21%27+said+Fred" | url_decode }}
-    </code></pre>
-</p>
+{% assign formula = "%27Stop%21%27+said+Fred" | url_decode %}
+{% render 'example-raw', number: 1, input: '{{ "%27Stop%21%27+said+Fred" | url_decode }}', output: formula %}

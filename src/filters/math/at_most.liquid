@@ -1,0 +1,10 @@
+---
+title: at_most
+description: limits a number to a maximum value.
+version: 8.4.0
+works: true
+---
+{% assign formula = 4 | at_most: 5 %}
+{% render 'example', number: 1, text: '4 | at_most: 5', code: formula %}
+{% assign formula = 4 | at_most: 3 %}
+{% render 'example', number: 2, text: '4 | at_most: 3', code: formula %}

@@ -1,0 +1,11 @@
+---
+title: Url_encode
+description: Converts any URL-unsafe characters in a string into percent-encoded characters.
+version: 1.9.1
+works: true
+---
+{% assign formula = "john@liquid.com" | url_encode %}
+{% render 'example-raw', number: 1, input: '{{ "john@liquid.com" | url_encode }}', output: formula %}
+
+{% assign formula = "Tetsuro Takara" | url_encode %}
+{% render 'example-raw', number: 2, input: '{{ "Tetsuro Takara" | url_encode }}', output: formula %}

@@ -1,0 +1,45 @@
+---
+title: divided_by
+description: divides a number by another number. The result is the string obtained by JavaScript .toString() of the result number.
+version: 1.9.1
+works: true
+---
+<h3>Example 1</h3>
+<p>input:
+  {% raw %}
+<pre><code>
+  {{ 16 | divided_by: 4 }}
+</code></pre>
+</p>
+{% endraw %}
+<p>output:
+<pre><code>
+  {{ 16 | divided_by: 4 }}
+</code></pre>
+</p>
+<h3>Example 2</h3>
+<p>input:
+  {% raw %}
+<pre><code>
+  {{ 5 | divided_by: 3 }}
+</code></pre>
+</p>
+{% endraw %}
+<p>output:
+<pre><code>
+  {{ 5 | divided_by: 3 }}
+</code></pre>
+</p>
+<h3>Example 3</h3>
+<p>input:
+  {% raw %}
+<pre><code>
+  {{ 5 | divided_by: 3, true }}
+</code></pre>
+</p>
+{% endraw %}
+<p>output:
+<pre><code>
+  {{ 5 | divided_by: 3, true }}
+</code></pre>
+</p>

@@ -1,0 +1,14 @@
+---
+title: ceil
+description: rounds the input up to the nearest whole number. LiquidJS tries to convert the input to a number before the filter is applied.
+version: 1.9.1
+works: true
+---
+{% assign formula = 1.2 | ceil %}
+{% render 'example', number: 1, text: '1.2 | ceil', code: formula %}
+{% assign formula = 2.0 | ceil %}
+{% render 'example', number: 2, text: '2.0 | ceil', code: formula %}
+{% assign formula = 183.357 | ceil %}
+{% render 'example', number: 3, text: '183.357 | ceil', code: formula %}
+{% assign formula = "3.5" | ceil %}
+{% render 'example', number: 4, text: '"3.5" | ceil', code: formula %}

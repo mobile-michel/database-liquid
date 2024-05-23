@@ -14,6 +14,7 @@
 <body>
     {% include 'nav' %}
     <main class="container">
+        {% include 'pagination' %}
         <h1>{{ title | capitalize }}</h1>
         <blockquote>{{ description | capitalize }}</blockquote>
         {% if version %}
