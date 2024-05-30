@@ -4,4 +4,14 @@ description: Removes any HTML tags from a string.
 version: 1.9.1
 works: true
 ---
-{{ "Have <em>you</em> read <strong>Ulysses</strong>?" | strip_html }}
+<h3>Example</h3>
+<p>input:
+<pre><code>{% raw %}
+        {{ "Have &lt;em>you&lt;/em> read &lt;strong>Ulysses&lt;/strong>?" | strip_html }}
+        {% endraw %}</code></pre>
+</p>
+<p>output:
+<pre><code>
+        {{ "Have <em>you</em> read <strong>Ulysses</strong>?" | strip_html }}
+    </code></pre>
+</p>

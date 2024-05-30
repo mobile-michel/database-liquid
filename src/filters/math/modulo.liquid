@@ -4,42 +4,9 @@ description: returns the remainder of a division operation.
 version: 1.9.1
 works: true
 ---
-<h3>Example 1</h3>
-<p>input:
-    {% raw %}
-<pre><code>
-    {{ 3 | modulo: 2 }}
-    </code></pre>
-</p>
-{% endraw %}
-<p>output:
-<pre><code>
-    {{ 3 | modulo: 2 }}
-    </code></pre>
-</p>
-<h3>Example 2</h3>
-<p>input:
-    {% raw %}
-<pre><code>
-    {{ 24 | modulo: 7 }}
-    </code></pre>
-</p>
-{% endraw %}
-<p>output:
-<pre><code>
-    {{ 24 | modulo: 7 }}
-    </code></pre>
-</p>
-<h3>Example 3</h3>
-<p>input:
-    {% raw %}
-<pre><code>
-    {{ 183.357 | modulo: 12 }}
-    </code></pre>
-</p>
-{% endraw %}
-<p>output:
-<pre><code>
-    {{ 183.357 | modulo: 12 }}
-    </code></pre>
-</p>
+{% assign formula = 3 | modulo: 2 %}
+{% render 'example', number: 1, text: '3 | modulo: 2', code: formula %}
+{% assign formula = 24 | modulo: 7 %}
+{% render 'example', number: 2, text: '24 | modulo: 7', code: formula %}
+{% assign formula = 183.357 | modulo: 12 %}
+{% render 'example', number: 3, text: '183.357 | modulo: 12', code: formula %}

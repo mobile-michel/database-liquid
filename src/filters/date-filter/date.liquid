@@ -4,8 +4,9 @@ description: To get the current time, pass the special word "now" or "today" as 
 version: 1.9.1
 works: true
 ---
-Note that the value will be the current time of when the page was last generated from the template, not when the page is presented to a user if caching or static site generation is involved.
+{% assign formula = "now" | date: "%Y-%m-%d %H:%M" %}
+{% render 'example', number: 1, text: '"now" | date: "%Y-%m-%d %H:%M"', code: formula %}
+{% assign formula = "today" | date: "%a, %b %d, %Y" %}
+{% render 'example', number: 2, text: '"today" | date: "%a, %b %d, %Y"', code: formula %}
 
-## Examples
-Last updated on: {{ "now" | date: "%Y-%m-%d %H:%M" }}  
-Last updated on: {{ "today" | date: "%Y-%m-%d %H:%M" }}
+Note that the value will be the current time of when the page was last generated from the template, not when the page is presented to a user if caching or static site generation is involved.

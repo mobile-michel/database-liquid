@@ -4,13 +4,5 @@ description: removes only the last occurrence of the specified substring from a 
 version: 10.2.0
 works: true
 ---
-### Example 1
-input: {% raw %}
-<code>
-{{ "I strained to see the train through the rain" | remove_last: "rain" }}
-</code>
-{% endraw %}
-output:
-<code>
-{{ "I strained to see the train through the rain" | remove_last: "rain" }}
-</code>
+{% assign formula = "I strained to see the train through the rain" | remove_last: "rain" %}
+{% render 'example', number: 1, text: '"I strained to see the train through the rain" | remove_last: "rain"', code: formula %}

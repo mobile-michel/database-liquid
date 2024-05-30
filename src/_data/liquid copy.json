@@ -208,72 +208,6 @@
                 ]
             },
             {
-                "subcategoryName": "html",
-                "subcategoryDescription": "URL filters.",
-                "elements":[
-                    {
-                        "elementName": "escape",
-                        "elementDescription": "escapes a string by replacing HTML special characters with escape sequences.",
-                        "version": "1.9.1",
-                        "active": true
-                    },
-                    {
-                        "elementName": "escape_once",
-                        "elementDescription": "escapes a string without changing existing escaped entities.",
-                        "version": "1.9.1",
-                        "active": true
-                    },
-                    {
-                        "elementName": "url_encode",
-                        "elementDescription": "converts any URL-unsafe characters in a string into percent-encoded characters.",
-                        "version": "1.9.1",
-                        "active": true
-                    },
-                    {
-                        "elementName": "url_decode",
-                        "elementDescription": "decodes a string that has been encoded as a URL.",
-                        "version": "6.1.0",
-                        "active": true
-                    },
-                    {
-                        "elementName": "strip_html",
-                        "elementDescription": "removes any HTML tags from a string.",
-                        "version": "1.9.1",
-                        "active": true
-                    },
-                    {
-                        "elementName": "newline_to_br",
-                        "elementDescription": "replaces every newline in a string with an HTML line break.",
-                        "version": "1.9.1",
-                        "active": true
-                    },
-                    {
-                        "elementName": "xml_escape",
-                        "elementDescription": "escape some text for use in XML.",
-                        "version": "10.13.0",
-                        "active": false
-                    },
-                    {
-                        "elementName": "cgi_escape",
-                        "elementDescription": "CGI escape a string for use in a URL.",
-                        "version": "10.13.0",
-                        "active": false
-                    },
-                    {
-                        "elementName": "uri_escape",
-                        "elementDescription": "percent encodes any special characters in a URI.",
-                        "version": "10.13.0",
-                        "active": false
-                    },
-                    {
-                        "elementName": "slugify",
-                        "elementDescription": "convert a string into a lowercase URL “slug”.",
-                        "version": "10.13.0",
-                        "active": false
-                    }
-                ]
-            },
-            {
                 "subcategoryName": "array",
                 "subcategoryDescription": "Perform array operations.",
                 "elements": [
@@ -470,6 +404,57 @@
                     {
                         "elementName": "to_integer",
                         "elementDescription": "Convert values to number.",
+                        "version": "10.13.0"
+                    }
+                ]
+            },
+            {
+                "subcategoryName": "html",
+                "subcategoryDescription": "URL filters.",
+                "elements":[
+                    {
+                        "elementName": "escape",
+                        "elementDescription": "Escapes a string by replacing HTML special characters with escape sequences.",
+                        "version": "1.9.1"
+                    },
+                    {
+                        "elementName": "escape_once",
+                        "elementDescription": "Escapes a string without changing existing escaped entities.",
+                        "version": "1.9.1"
+                    },
+                    {
+                        "elementName": "url_encode",
+                        "elementDescription": "Converts any URL-unsafe characters in a string into percent-encoded characters.",
+                        "version": "1.9.1"
+                    },
+                    {
+                        "elementName": "url_decode",
+                        "elementDescription": "Decodes a string that has been encoded as a URL.",
+                        "version": "6.1.0"
+                    },
+                    {
+                        "elementName": "strip_html",
+                        "elementDescription": "Removes any HTML tags from a string.",
+                        "version": "1.9.1"
+                    },
+                    {
+                        "elementName": "newline_to_br",
+                        "elementDescription": "Replaces every newline in a string with an HTML line break.",
+                        "version": "1.9.1"
+                    },
+                    {
+                        "elementName": "xml_escape",
+                        "elementDescription": "Escape some text for use in XML.",
+                        "version": "10.13.0"
+                    },
+                    {
+                        "elementName": "cgi_escape",
+                        "elementDescription": "CGI escape a string for use in a URL.",
+                        "version": "10.13.0"
+                    },
+                    {
+                        "elementName": "uri_escape",
+                        "elementDescription": "Percent encodes any special characters in a URI.",
                         "version": "10.13.0"
                     }
                 ]

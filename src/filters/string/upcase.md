@@ -4,23 +4,7 @@ description: makes each character in a string uppercase. It has no effect on str
 version: 1.9.1
 works: true
 ---
-### Example 1
-input: {% raw %}
-<code>
-{{ "Parker Moore" | upcase }}
-</code>
-{% endraw %}
-output:
-<code>
-{{ "Parker Moore" | upcase }}
-</code>
-### Example 2
-input: {% raw %}
-<code>
-{{ "APPLE" | upcase }}
-</code>
-{% endraw %}
-output:
-<code>
-{{ "APPLE" | upcase }}
-</code>
+{% assign formula = "Parker Moore" | upcase %}
+{% render 'example', number: 1, text: '"Parker Moore" | upcase', code: formula %}
+{% assign formula = "APPLE" | upcase %}
+{% render 'example', number: 2, text: '"APPLE" | upcase', code: formula %}

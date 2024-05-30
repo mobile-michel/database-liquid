@@ -1,18 +1,30 @@
 ---
-title: Json
+title: json
 description: Convert values to string via JSON.stringify(), for debug purpose.
-liquidjs: https://liquidjs.com/filters/json.html
-shopify: absent !
-shopifyDev: https://shopify.dev/docs/api/liquid/filters/json
+version: 9.10.0
+works: true
 ---
-### Input
-{% raw %}
-<pre>
-{% assign arr = "foo bar coo" | split: " " %}
-{{ arr | json }}
-</pre>
-{% endraw %}
+### Example 2
+input: 
+<pre><code>{% raw %}{% assign arr = "foo bar coo" | split: " " %}
+{{ arr | json }}{% endraw %}
+</code></pre>
 
-### Output
-{% assign arr = "foo bar coo" | split: " " %}
-{{ arr | json }}
+output:
+<pre><code>{% assign arr = "foo bar coo" | split: " " %}{{ arr | json }}</code></pre>
+
+### Space
+
+Added in v10.11.0
+
+An additional space parameter can be specified to format the JSON:
+
+input:
+
+<pre><code>{% raw %}{% assign arr = "foo bar coo" | split: " " %}
+{{ arr | json: 4 }}{% endraw %}
+</pre></code>
+
+output:
+
+<pre><code>{% assign arr = "foo bar coo" | split: " " %}{{ arr | json: 4 }}</code></pre>

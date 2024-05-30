@@ -1,9 +1,8 @@
 ---
 title: sort
 description: Sorts items in an array in case-sensitive order.
-liquidjs: https://liquidjs.com/filters/sort.html
-shopify: https://shopify.github.io/liquid/filters/sort/
-shopifyDev: https://shopify.dev/docs/api/liquid/filters/sort
+version: 1.9.1
+works: true
 ---
 ### Example 1
 input: {% raw %}

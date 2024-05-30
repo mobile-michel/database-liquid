@@ -1,0 +1,25 @@
+---
+title: unshift
+description: Unshift an element to the front of the array. It’s NON-DESTRUCTIVE, i.e. it does not mutate the array, but rather make a copy and mutate that.
+version: 10.11.0
+works: true
+---
+<h3>Example</h3>
+<p>input:
+<pre><code>{% raw %}
+    {% assign fruits = "oranges, peaches" | split: ", " %}
+    {% assign everything = fruits | unshift: "apples" %}
+    {% for item in everything %}
+    - {{ item }}
+    {% endfor %}
+    {% endraw %}</code></pre>
+</p>
+<p>output:
+<pre><code>
+    {%- assign fruits = "oranges, peaches" | split: ", " %}
+    {%- assign everything = fruits | unshift: "apples" %}
+    {%- for item in everything %}
+    - {{ item }}
+    {%- endfor %}
+  </code></pre>
+</p>

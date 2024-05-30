@@ -1,0 +1,25 @@
+---
+title: push
+description: Push an element into array. It’s NON-DESTRUCTIVE, i.e. it does not mutate the array, but rather make a copy and mutate that.
+version: 10.8.0
+works: true
+---
+<h3>Example</h3>
+<p>input:
+<pre><code>{% raw %}
+    {% assign fruits = "apples, oranges" | split: ", " %}
+    {% assign everything = fruits | push: "peaches" %}
+    {% for item in everything %}
+    - {{ item }}
+    {% endfor %}
+    {% endraw %}</code></pre>
+</p>
+<p>output:
+<pre><code>
+    {%- assign fruits = "apples, oranges" | split: ", " %}
+    {%- assign everything = fruits | push: "peaches" %}
+    {%- for item in everything %}
+    - {{ item }}
+    {%- endfor %}
+  </code></pre>
+</p>

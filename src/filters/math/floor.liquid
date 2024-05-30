@@ -4,55 +4,11 @@ description: rounds the input down to the nearest whole number. LiquidJS tries t
 version: 1.9.1
 works: true
 ---
-<h3>Example 1</h3>
-<p>input:
-  {% raw %}
-<pre><code>
-  {{ 1.2 | floor }}
-</code></pre>
-</p>
-{% endraw %}
-<p>output:
-<pre><code>
-  {{ 1.2 | floor }}
-</code></pre>
-</p>
-<h3>Example 2</h3>
-<p>input:
-  {% raw %}
-<pre><code>
-  {{ 2.0 | floor }}
-</code></pre>
-</p>
-{% endraw %}
-<p>output:
-<pre><code>
-  {{ 2.0 | floor }}
-</code></pre>
-</p>
-<h3>Example 3</h3>
-<p>input:
-  {% raw %}
-<pre><code>
-  {{ 183.357 | floor }}
-</code></pre>
-</p>
-{% endraw %}
-<p>output:
-<pre><code>
-  {{ 183.357 | floor }}
-</code></pre>
-</p>
-<h3>Example 4</h3>
-<p>input:
-  {% raw %}
-<pre><code>
-  {{ "3.5" | floor }}
-</code></pre>
-</p>
-{% endraw %}
-<p>output:
-<pre><code>
-  {{ "3.5" | floor }}
-</code></pre>
-</p>
+{% assign formula = 1.2 | floor %}
+{% render 'example', number: 1, text: '1.2 | floor', code: formula %}
+{% assign formula = 2.0 | floor %}
+{% render 'example', number: 2, text: '2.0 | floor', code: formula %}
+{% assign formula = 183.357 | floor %}
+{% render 'example', number: 3, text: '183.357 | floor', code: formula %}
+{% assign formula = "3.5" | floor %}
+{% render 'example', number: 4, text: '"3.5" | floor', code: formula %}

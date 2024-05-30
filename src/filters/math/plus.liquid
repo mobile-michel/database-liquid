@@ -4,42 +4,9 @@ description: adds a number to another number.
 version: 1.9.1
 works: true
 ---
-<h3>Example 1</h3>
-<p>input:
-    {% raw %}
-<pre><code>
-    {{ 4 | plus: 2 }}
-    </code></pre>
-</p>
-{% endraw %}
-<p>output:
-<pre><code>
-    {{ 4 | plus: 2 }}
-    </code></pre>
-</p>
-<h3>Example 2</h3>
-<p>input:
-    {% raw %}
-<pre><code>
-    {{ 16 | plus: 4 }}
-    </code></pre>
-</p>
-{% endraw %}
-<p>output:
-<pre><code>
-    {{ 16 | plus: 4 }}
-    </code></pre>
-</p>
-<h3>Example 3</h3>
-<p>input:
-    {% raw %}
-<pre><code>
-    {{ 183.357 | plus: 12 }}
-    </code></pre>
-</p>
-{% endraw %}
-<p>output:
-<pre><code>
-    {{ 183.357 | plus: 12 }}
-    </code></pre>
-</p>
+{% assign formula = 4 | plus: 2 %}
+{% render 'example', number: 1, text: '4 | plus: 2', code: formula %}
+{% assign formula = 16 | plus: 4 %}
+{% render 'example', number: 2, text: '16 | plus: 4', code: formula %}
+{% assign formula = 183.357 | plus: 12 %}
+{% render 'example', number: 3, text: '183.357 | plus: 12', code: formula %}

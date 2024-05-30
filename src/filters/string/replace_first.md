@@ -4,13 +4,5 @@ description: replaces only the first occurrence of the first argument in a strin
 version: 1.9.1
 works: true
 ---
-### Example
-input: {% raw %}
-<code>
-{{ "Take my protein pills and put my helmet on" | replace_first: "my", "your" }}
-</code>
-{% endraw %}
-output:
-<code>
-{{ "Take my protein pills and put my helmet on" | replace_first: "my", "your" }}
-</code>
+{% assign formula = "Take my protein pills and put my helmet on" | replace_first: "my", "your" %}
+{% render 'example', number: 1, text: '"Take my protein pills and put my helmet on" | replace_first: "my", "your"', code: formula %}

@@ -4,42 +4,9 @@ description: divides a number by another number. The result is the string obtain
 version: 1.9.1
 works: true
 ---
-<h3>Example 1</h3>
-<p>input:
-  {% raw %}
-<pre><code>
-  {{ 16 | divided_by: 4 }}
-</code></pre>
-</p>
-{% endraw %}
-<p>output:
-<pre><code>
-  {{ 16 | divided_by: 4 }}
-</code></pre>
-</p>
-<h3>Example 2</h3>
-<p>input:
-  {% raw %}
-<pre><code>
-  {{ 5 | divided_by: 3 }}
-</code></pre>
-</p>
-{% endraw %}
-<p>output:
-<pre><code>
-  {{ 5 | divided_by: 3 }}
-</code></pre>
-</p>
-<h3>Example 3</h3>
-<p>input:
-  {% raw %}
-<pre><code>
-  {{ 5 | divided_by: 3, true }}
-</code></pre>
-</p>
-{% endraw %}
-<p>output:
-<pre><code>
-  {{ 5 | divided_by: 3, true }}
-</code></pre>
-</p>
+{% assign formula = 16 | divided_by: 4 %}
+{% render 'example', number: 1, text: '16 | divided_by: 4', code: formula %}
+{% assign formula = 5 | divided_by: 3 %}
+{% render 'example', number: 2, text: '5 | divided_by: 3', code: formula %}
+{% assign formula = 5 | divided_by: 3, true %}
+{% render 'example', number: 3, text: '5 | divided_by: 3, true', code: formula %}

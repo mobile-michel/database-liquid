@@ -1,0 +1,18 @@
+---
+title: uri_escape
+description: percent encodes any special characters in a URI. URI escape normally replaces a space with %20. Reserved characters will not be escaped.
+version: 10.13.0
+works: false
+---
+<h3>Example</h3>
+<p>input:
+<pre><code>{% raw %}
+        {{ "http://foo.com/?q=foo, \bar?" | uri_escape }}
+        {% endraw %}</code></pre>
+</p>
+<p>output does not work !</p>
+<p>HTML output:
+<pre><code>
+        {{ "http://foo.com/?q=foo,%20%5Cbar?" | escape }}
+    </code></pre>
+</p>

@@ -1,0 +1,18 @@
+---
+title: cgi_escape
+description: CGI escape a string for use in a URL. Replaces any special characters with appropriate %XX replacements. CGI escape normally replaces a space with a plus + sign.
+version: 10.13.0
+works: false
+---
+<h3>Example</h3>
+<p>input:
+<pre><code>{% raw %}
+        {{ "foo, bar; baz?" | cgi_escape }}
+        {% endraw %}</code></pre>
+</p>
+<p>output does not work !</p>
+<p>HTML output:
+<pre><code>
+        {{ "foo%2C+bar%3B+baz%3F" | escape }}
+    </code></pre>
+</p>

@@ -1,12 +1,12 @@
 ---
 title: The LiquidJS template language
-description: Liquid uses a combination of output (with optional filters) and tags inside template files to display dynamic content.
-layout: base
+description: LiquidJS uses a combination of output (with optional filters) and tags inside template files to display dynamic content. LiquidJS has some similarities to Liquid in Shopify, but many elements work differently.
+layout: default
 ---
 ## LiquidJS
-- [Object](objects): contain the content... `{% raw %}{{ page }}{% endraw %}`
+- [Output](objects): contain the content... `{% raw %}{{ description }}{% endraw %}`
 - [Tag](tags): create the logic and control flow... `{% raw %}{% if user %}{% endraw %}`
-- [Filter](filters): change the output of object or variable... `{% raw %}{{ object | filter }}{% endraw %}`
+- [Filter](filters): modify the output... `{% raw %}{{ object | filter }}{% endraw %}`
 
 ## Interesting links
 - [LiquidJS](https://liquidjs.com/), the JavaScript version.

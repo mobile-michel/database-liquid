@@ -4,23 +4,7 @@ description: makes each character in a string lowercase. It has no effect on str
 version: 1.9.1
 works: true
 ---
-### Example 1
-input: {% raw %}
-<code>
-{{ "Parker Moore" | downcase }}
-</code>
-{% endraw %}
-output:
-<code>
-{{ "Parker Moore" | downcase }}
-</code>
-### Example 2
-input: {% raw %}
-<code>
-{{ "apple" | downcase }}
-</code>
-{% endraw %}
-output:
-<code>
-{{ "apple" | downcase }}
-</code>
+{% assign formula = "Parker Moore" | downcase %}
+{% render 'example', number: 1, text: '"Parker Moore" | downcase', code: formula %}
+{% assign formula = "apple" | downcase %}
+{% render 'example', number: 2, text: '"apple" | downcase', code: formula %}

@@ -1,0 +1,61 @@
+---
+title: slugify
+description: convert a string into a lowercase URL “slug”.
+version: 10.13.0
+works: false
+---
+<h3>Example 1</h3>
+<p>input:
+<pre><code>{% raw %}
+        {{ "The _config.yml file" | slugify }}
+        {% endraw %}</code></pre>
+</p>
+<p>output (works through Eleventy 2.0.1 !):
+<pre><code>
+        {{ "The _config.yml file" | slugify }}
+    </code></pre>
+</p>
+<h3>Example 2</h3>
+<p>input:
+<pre><code>{% raw %}
+        {{ "The _config.yml file" | slugify: "pretty" }}
+        {% endraw %}</code></pre>
+</p>
+<p>output (does not work !):
+<pre><code>
+        the-_config.yml-file
+        </code></pre>
+</p>
+<h3>Example 3</h3>
+<p>input:
+<pre><code>{% raw %}
+        {{ "The _cönfig.yml file" | slugify: "ascii" }}
+        {% endraw %}</code></pre>
+</p>
+<p>output (does not work !):
+<pre><code>
+        the-c-nfig-yml-file
+        </code></pre>
+</p>
+<h3>Example 4</h3>
+<p>input:
+<pre><code>{% raw %}
+        {{ "The cönfig.yml file" | slugify: "latin" }}
+        {% endraw %}</code></pre>
+</p>
+<p>output (does not work !):
+<pre><code>
+        the-config-yml-file
+        </code></pre>
+</p>
+<h3>Example 5</h3>
+<p>input:
+<pre><code>{% raw %}
+        {{ "The cönfig.yml file" | slugify: "latin", true }}
+        {% endraw %}</code></pre>
+</p>
+<p>output (does not work !):
+<pre><code>
+        The-config-yml-file
+        </code></pre>
+</p>

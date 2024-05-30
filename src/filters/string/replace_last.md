@@ -4,13 +4,5 @@ description: replaces only the last occurrence of the first argument in a string
 version: 10.2.0
 works: true
 ---
-### Example
-input: {% raw %}
-<code>
-{{ "Take my protein pills and put my helmet on" | replace_last: "my", "your" }}
-</code>
-{% endraw %}
-output:
-<code>
-{{ "Take my protein pills and put my helmet on" | replace_last: "my", "your" }}
-</code>
+{% assign formula = "Take my protein pills and put my helmet on" | replace_last: "my", "your" %}
+{% render 'example', number: 1, text: '"Take my protein pills and put my helmet on" | replace_last: "my", "your"', code: formula %}

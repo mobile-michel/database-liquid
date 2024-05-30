@@ -1,11 +1,10 @@
 ---
 title: group_by
 description: Group an array’s items by a given property.
-liquidjs: https://liquidjs.com/filters/group_by.html
-shopify: https://shopify.github.io/liquid/filters/group_by/
-shopifyDev: https://shopify.dev/docs/api/liquid/filters/group_by
+version: 10.11.0
+works: true
 ---
-<h3>Example</h3>
+<h3>Example 1</h3>
 <p>input:
   {% raw %}
 <pre><code>
@@ -16,5 +15,25 @@ shopifyDev: https://shopify.dev/docs/api/liquid/filters/group_by
 <p>output:
 <pre><code>
     {{ members | group_by: "graduation_year" | json: 2 }}
+  </code></pre>
+</p>
+
+<h3>Example 2</h3>
+<p>input:
+  {% raw %}
+<pre><code>
+  {% assign items = members | group_by: "graduation_year" %}
+  {% for item in items %}
+    Graduation year {{ item.name }}
+  {% endfor %}
+  </code></pre>
+</p>
+{% endraw %}
+<p>output:
+<pre><code>
+  {% assign items = members | group_by: "graduation_year" %}
+  {% for item in items %}
+    Graduation year {{ item.name }}
+  {% endfor %}
   </code></pre>
 </p>

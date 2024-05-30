@@ -1,9 +1,8 @@
 ---
 title: sort_natural
 description: Sorts items in an array in case-insensitive order.
-liquidjs: https://liquidjs.com/filters/sort_natural.html
-shopify: https://shopify.github.io/liquid/filters/sort_natural/
-shopifyDev: https://shopify.dev/docs/api/liquid/filters/sort_natural
+version: 8.4.0
+works: true
 ---
 ### Example 1
 input: {% raw %}

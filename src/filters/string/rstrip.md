@@ -4,13 +4,5 @@ description: removes all whitespace (tabs, spaces, and newlines) from the right 
 version: 1.9.1
 works: true
 ---
-### Example
-input: {% raw %}
-<code>
-BEGIN{{ "          So much room for activities!          " | rstrip }}END
-</code>
-{% endraw %}
-output:
-<code>
-BEGIN{{ "          So much room for activities!          " | rstrip }}END
-</code>
+{% assign formula = "          So much room for activities!          " | rstrip %}
+{% render 'example', number: 1, text: '"          So much room for activities!          " | rstrip', code: formula %}

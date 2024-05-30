@@ -4,13 +4,5 @@ description: removes all whitespace (tabs, spaces, and newlines) from both the l
 version: 1.9.1
 works: true
 ---
-### Example
-input: {% raw %}
-<code>
-BEGIN{{ "          So much room for activities!          " | strip }}END
-</code>
-{% endraw %}
-output:
-<code>
-BEGIN{{ "          So much room for activities!          " | strip }}END
-</code>
+{% assign formula = "          So much room for activities!          " | strip %}
+{% render 'example', number: 1, text: '"          So much room for activities!          " | strip', code: formula %}

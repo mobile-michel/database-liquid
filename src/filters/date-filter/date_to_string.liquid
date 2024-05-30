@@ -4,3 +4,17 @@ description: Convert a date to short format. Same with Jekyll date_to_string fil
 version: 10.13.0
 works: false
 ---
+<h3>Example 1</h3>
+<p>input:
+<pre><code>{% raw %}{{ site.time | date_to_string }}{% endraw %}</code></pre>
+</p>
+<p>output:
+<pre><code>07 Nov 2008</code></pre>
+</p>
+<h3>Example 2</h3>
+<p>input:
+<pre><code>{% raw %}{{ site.time | date_to_string: "ordinal", "US" }}{% endraw %}</code></pre>
+</p>
+<p>output:
+<pre><code>Nov 7th, 2008</code></pre>
+</p>

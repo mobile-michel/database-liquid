@@ -4,13 +4,5 @@ description: shortens a string down to the number of words passed as an argument
 version: 1.9.1
 works: true
 ---
-### Example
-input: {% raw %}
-<code>
-{{ "Ground control to Major Tom." | truncatewords: 3 }}
-</code>
-{% endraw %}
-output:
-<code>
-{{ "Ground control to Major Tom." | truncatewords: 3 }}
-</code>
+{% assign formula = "Ground control to Major Tom." | truncatewords: 3 %}
+{% render 'example', number: "1", text: '"Ground control to Major Tom." | truncatewords: 3', code: formula %}
