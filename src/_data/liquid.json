@@ -1,11 +1,11 @@
 [
     {
         "category": "filters",
-        "categoryDescription": "Filters are used to modify output.",
+        "categoryDescription": "used to modify output.",
         "subcategory": [
             {
                 "subcategoryName": "math",
-                "subcategoryDescription": "Perform mathematical operation on numbers.",
+                "subcategoryDescription": "perform mathematical operation on numbers.",
                 "elements": [
                     {
                         "elementName": "plus",
@@ -77,7 +77,7 @@
             },
             {
                 "subcategoryName": "string",
-                "subcategoryDescription": "Perform string operations.",
+                "subcategoryDescription": "perform string operations.",
                 "elements": [
                     {
                         "elementName": "append",
@@ -275,7 +275,7 @@
             },
             {
                 "subcategoryName": "array",
-                "subcategoryDescription": "Perform array operations.",
+                "subcategoryDescription": "perform array operations.",
                 "elements": [
                     {
                         "elementName": "slice",
@@ -478,7 +478,7 @@
     },
     {
         "category": "tags",
-        "categoryDescription": "Create the logic and control flow for templates.",
+        "categoryDescription": "create the logic and control flow for templates.",
         "subcategory":[
             {
                 "subcategoryName": "Iteration",
@@ -619,7 +619,7 @@
     },
     {
         "category": "objects",
-        "categoryDescription": "Contain the content that Liquid displays on a page.",
+        "categoryDescription": "contain the content that Liquid displays on a page.",
         "subcategory":[
             {
                 "subcategoryName": "string",

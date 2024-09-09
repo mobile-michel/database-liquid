@@ -1,15 +1,15 @@
 ---
-title: Filters v2
+title: filters
 description: list of filters in LiquidJS.
-date: 2024-01-01
+date: 2024-01-02
 layout: default
 tags: primary
 pagination:
   data: liquid
   size: 30
+
 ---
-{% assign items = liquid %}
+{% assign items = pagination.items %}
 {%- for item in items %}
-- [{{ item.data.title }}]({{ item.url }}): {{ item.data.description }}
-**List of {{ item.data.title }}**: {{ item.data.list }}
-{%- endfor %}
+- **{{ item }}**
+{% endfor -%}
